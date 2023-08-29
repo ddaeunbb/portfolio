@@ -1,9 +1,9 @@
 import { motion } from 'framer-motion';
 import Lottie from 'react-lottie-player';
-import BoldText from '../../components/boldText/BoldText';
-import Bubble from '../../components/bubble/Bubble';
-import ArrowJson from '../../lottie/arrow.json';
 import * as SC from './Main.styled';
+import BoldText from 'src/components/boldText/BoldText';
+import Bubble from 'src/components/bubble/Bubble';
+import ArrowJson from 'src/lottie/arrow.json';
 
 export default function Main() {
   return (

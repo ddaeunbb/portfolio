@@ -1,11 +1,11 @@
 import { motion } from 'framer-motion';
 import Lottie from 'react-lottie-player';
-import LinkList from '../../components/linkList/LinkList';
-import MainSlide from '../../components/mainSlide/MainSlide';
-import { useObserver } from '../../hooks/useObserver';
-import ShiningJson from '../../lottie/shining.json';
-import { opacityVisible } from '../../variants/variants';
 import * as SC from './Intro.styled';
+import LinkList from 'src/components/linkList/LinkList';
+import MainSlide from 'src/components/mainSlide/MainSlide';
+import { useObserver } from 'src/hooks/useObserver';
+import ShiningJson from 'src/lottie/shining.json';
+import { opacityVisible } from 'src/variants/variants';
 
 export default function Intro() {
   const { ref, animation } = useObserver();

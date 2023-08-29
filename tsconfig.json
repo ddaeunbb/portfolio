@@ -18,14 +18,12 @@
     "strict": true,
     "noUnusedLocals": true,
     "noUnusedParameters": true,
-    "noFallthroughCasesInSwitch": true
+    "noFallthroughCasesInSwitch": true,
+    "baseUrl": "./",
+    "paths": {
+      "@/*": ["/src/*"]
+    }
   },
-  "baseUrl": ".",
-  "paths": {
-    "@src/*": ["/src/*"],
-    "@components/*": ["/src/components/*"],
-    "@public/*": ["/public/*"]
-  },
-  "include": ["src", "**/*.ts", "**/*.tsx"],
+  "include": ["src", "src/main.tsx", "**/*.ts", "**/*.tsx", "vite-env.d.ts"],
   "references": [{ "path": "./tsconfig.node.json" }]
 }

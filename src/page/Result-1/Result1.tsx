@@ -1,17 +1,29 @@
-import { ReactComponent as Github } from '../../../public/icon/github.svg';
-import { ReactComponent as Web } from '../../../public/icon/link.svg';
-import * as SC from './Result1.styled';
+import { Link } from 'react-router-dom';
+import { ReactComponent as Back } from 'public/icon/back.svg';
+import { ReactComponent as Blog } from 'public/icon/blog.svg';
+import { ReactComponent as Github } from 'public/icon/github.svg';
+import { ReactComponent as Web } from 'public/icon/web.svg';
+import * as SC from 'src/common/result.styled';
 
 export function Component() {
   return (
     <SC.Container>
+      <Link to="/project">
+        <SC.BackBtn>
+          <Back
+            className="stroke-deeppurple fill-deeppurple"
+            width={40}
+            height={40}
+          />
+        </SC.BackBtn>
+      </Link>
       <div className="relative flex justify-center">
         <SC.Title>SharePetment</SC.Title>
         <SC.TitleShadow style={{ WebkitTextStroke: '1px black' }}>
           SharePetment
         </SC.TitleShadow>
       </div>
-      <SC.IntroImg>
+      <SC.IntroImg className="bg-[url(/portfolio/sharepetment/sharepetment2.png)]">
         <SC.UrlWrap>
           <a
             href="https://github.com/SharePetment/SharePetment"
@@ -23,6 +35,11 @@ export function Component() {
           <a href="https://sharepetment.site/home" target="_blank">
             <SC.UrlBtn>
               <Web width={40} height={40} />
+            </SC.UrlBtn>
+          </a>
+          <a href="https://ddaeunbb.tistory.com/305" target="_blank">
+            <SC.UrlBtn>
+              <Blog width={40} height={40} />
             </SC.UrlBtn>
           </a>
         </SC.UrlWrap>
@@ -61,9 +78,13 @@ export function Component() {
       </div>
 
       <div>
+        <SC.SemiTitle>담당</SC.SemiTitle>
+        <SC.Paragraph>부팀장 / 프론트엔드 팀장</SC.Paragraph>
+      </div>
+
+      <div>
         <SC.SemiTitle>구현</SC.SemiTitle>
         <SC.List>
-          <li>부팀장 / 프론트엔드 팀장</li>
           <li>swiper 라이브러리를 활용해 게시물 CRUD, 이미지 미리보기 구현</li>
           <SC.Preview className='bg-[url("/public/portfolio/sharepetment/피드올리기.gif")]' />
           <SC.Preview className='bg-[url("/public/portfolio/sharepetment/피드수정.gif")]' />

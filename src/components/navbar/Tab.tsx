@@ -3,13 +3,21 @@ import { Link, useLocation } from 'react-router-dom';
 import * as SC from './Tab.styled';
 
 interface TabProp {
-  path: 'Home' | 'ToHome' | 'Info' | 'Skills' | 'Project' | 'Contact' | 'Back';
+  path:
+    | 'Home'
+    | 'ToHome'
+    | 'Info'
+    | 'Skills'
+    | 'Project'
+    | 'Contact'
+    | 'Projects';
   link: string;
 }
 
 export default function Tab({ path, link }: TabProp) {
   const location = useLocation();
   const [position, setPosition] = useState<number>(0);
+  const pattern = /\/project\//;
 
   useEffect(() => {
     const onScroll = () => {
@@ -64,10 +72,12 @@ export default function Tab({ path, link }: TabProp) {
         </SC.Tab>
       );
 
-    case 'Back':
+    case 'Projects':
       return (
         <Link to={link}>
-          <SC.Tab selected={false}>Back to Project</SC.Tab>
+          <SC.Tab selected={pattern.test(location.pathname as string)}>
+            Project
+          </SC.Tab>
         </Link>
       );
 

@@ -1,7 +1,7 @@
 import { motion } from 'framer-motion';
-import { useObserver } from '../../hooks/useObserver';
-import { spin } from '../../variants/variants';
 import * as SC from './TimeBox.styled';
+import { useObserver } from 'src/hooks/useObserver';
+import { spin } from 'src/variants/variants';
 
 interface TimeBoxProp {
   direction?: 'left' | 'right';

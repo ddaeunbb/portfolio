@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion';
 import Lottie from 'react-lottie-player';
-import BubbleJson from '../../lottie/bubble.json';
+import BubbleJson from 'src/lottie/bubble.json';
 
 interface BubbleProp {
   style: string;

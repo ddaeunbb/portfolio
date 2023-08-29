@@ -1,10 +1,10 @@
 import { motion } from 'framer-motion';
 import Lottie from 'react-lottie-player';
-import TitleBox from '../../components/titleBox/TitleBox';
-import { useObserver } from '../../hooks/useObserver';
-import CodeJson from '../../lottie/code.json';
-import { fadeUp } from '../../variants/variants';
 import * as SC from './Info.styled';
+import TitleBox from 'src/components/titleBox/TitleBox';
+import { useObserver } from 'src/hooks/useObserver';
+import CodeJson from 'src/lottie/code.json';
+import { fadeUp } from 'src/variants/variants';
 
 export default function Info() {
   const { ref, animation } = useObserver();

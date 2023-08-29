@@ -15,12 +15,23 @@ export const TitleShadow = tw.h1`
   text-white
 `;
 
+export const BackBtn = tw.button`
+  w-12
+  h-12
+  fixed
+  top-5
+  left-3
+  flex
+  justify-center
+  items-center
+`;
+
 export const Container = tw.div`
   w-[90%]
   max-w-[700px]
   flex
   flex-col
-  py-32
+  py-10
   m-auto
   gap-12
 `;
@@ -33,7 +44,6 @@ export const IntroImg = tw.div`
   shadow-md
   border
   bg-cover
-  bg-[url("../../public/portfolio/sharepetment/sharepetment2.png")]
 `;
 
 export const SemiTitle = tw.h2`

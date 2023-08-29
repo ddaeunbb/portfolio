@@ -1,12 +1,11 @@
 import { motion } from 'framer-motion';
 import { useLocation } from 'react-router-dom';
-import Path from '../../routers/path';
 import * as SC from './Navbar.styled';
-import Tab from './Tab';
+import Tab from 'src/components/navbar/Tab';
+import Path from 'src/routers/path';
 
 export default function Navbar() {
   const location = useLocation();
-
   const pattern = /\/project\//;
 
   return (
@@ -40,7 +39,9 @@ export default function Navbar() {
 
       {pattern.test(location.pathname as string) && (
         <SC.Tabs>
-          <Tab link="/project" path="Back" />
+          <Tab link="/" path="ToHome" />
+          <Tab link={Path.Project} path="Projects" />
+          <Tab link={Path.Contact} path="Contact" />
         </SC.Tabs>
       )}
     </motion.div>

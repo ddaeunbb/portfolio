@@ -1,7 +1,8 @@
 import { motion } from 'framer-motion';
-import ProjectBox from '../../components/projectBox/ProjectBox';
-import { fadePop } from '../../variants/variants';
 import * as SC from './Project.styled';
+import ProjectBox from 'src/components/projectBox/ProjectBox';
+import Path from 'src/routers/path';
+import { fadePop } from 'src/variants/variants';
 
 export function Component() {
   return (
@@ -13,14 +14,14 @@ export function Component() {
           date={'2023.06.28 - 2023.7.24'}
           intro={'반려동물 일상 공유 SNS 및 산책 서비스'}
           bg='bg-[url("/portfolio/sharepetment/sharepetment.png")]'
-          link="/project/1"
+          link={Path.Result1}
         />
         <ProjectBox
           title={'02. Stackoverflow'}
           date={'2023.06.09 - 2023.06.27'}
           intro={'스택오버플로우 클론코딩 및 기능구현'}
           bg='bg-[url("/portfolio/stackoverflow/stackoverflow.png")]'
-          link="/project/1"
+          link={Path.Result2}
         />
         <ProjectBox
           title={'03. Solo-Project'}

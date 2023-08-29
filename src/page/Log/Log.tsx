@@ -1,5 +1,5 @@
-import TimeBox from '../../components/timeBox/TimeBox';
 import * as SC from './Log.styled';
+import TimeBox from 'src/components/timeBox/TimeBox';
 
 export default function Log() {
   return (
