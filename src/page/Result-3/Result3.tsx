@@ -25,7 +25,7 @@ export function Component() {
           <div className="relative flex justify-center">
             <SC.Title>Solo - Project</SC.Title>
             <SC.TitleShadow
-              className="left-[180px]"
+              className="left-[180px] max-sm:left-[125px]"
               style={{ WebkitTextStroke: '1px black' }}>
               Solo - Project
             </SC.TitleShadow>

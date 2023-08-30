@@ -23,7 +23,7 @@ export function Component() {
           <div className="relative flex justify-center">
             <SC.Title>BAMP - Site</SC.Title>
             <SC.TitleShadow
-              className="left-[202px]"
+              className="left-[202px] max-sm:left-[142px]"
               style={{ WebkitTextStroke: '1px black' }}>
               BAMP - Site
             </SC.TitleShadow>

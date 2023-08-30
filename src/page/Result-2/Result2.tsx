@@ -23,7 +23,9 @@ export function Component() {
         <SC.Container>
           <div className="relative flex justify-center">
             <SC.Title>Stackoverflow</SC.Title>
-            <SC.TitleShadow style={{ WebkitTextStroke: '1px black' }}>
+            <SC.TitleShadow
+              className="max-sm:left-[110px]"
+              style={{ WebkitTextStroke: '1px black' }}>
               Stackoverflow
             </SC.TitleShadow>
           </div>

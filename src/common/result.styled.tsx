@@ -3,6 +3,7 @@ import tw from 'tailwind-styled-components';
 export const Title = tw.h1`
   font-bold
   text-5xl
+  max-sm:text-4xl
   text-deeppurple/90
   z-10
 `;
@@ -12,6 +13,7 @@ export const TitleShadow = tw.h1`
   left-[170px]
   font-bold
   text-5xl
+  max-sm:text-4xl
   text-white
 `;
 
