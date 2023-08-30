@@ -23,6 +23,10 @@ export const router = createBrowserRouter([
         path: Path.Result2,
         lazy: () => import('src/page/Result-2/Result2'),
       },
+      {
+        path: Path.Result3,
+        lazy: () => import('src/page/Result-3/Result3'),
+      },
     ],
   },
 ]);

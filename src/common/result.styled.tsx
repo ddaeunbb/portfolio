@@ -31,9 +31,26 @@ export const Container = tw.div`
   max-w-[700px]
   flex
   flex-col
-  py-10
+  py-20
   m-auto
   gap-12
+`;
+
+export const Wrap = tw.section`
+  p-8
+  bg-white
+  shadow-md
+  rounded-2xl
+  border-2
+`;
+
+export const VideoWrap = tw.div`
+  flex
+  justify-center
+  shadow-md
+  rounded-2xl
+  overflow-hidden
+  border-2
 `;
 
 export const IntroImg = tw.div`
@@ -42,15 +59,20 @@ export const IntroImg = tw.div`
   h-80
   rounded-2xl
   shadow-md
-  border
+  border-2
   bg-cover
 `;
 
 export const SemiTitle = tw.h2`
+  inline-block
+  px-3
+  py-1
+  rounded-full
   font-bold
   text-deeppurple/90
-  text-lg
-  mb-2
+  text-base
+  mb-3
+  bg-lightpurple
 `;
 
 export const Paragraph = tw.p`
@@ -86,7 +108,6 @@ export const Preview = tw.article`
   h-96
   rounded-2xl
   shadow-md
-  border
   border-2
   bg-cover
 `;
@@ -105,7 +126,6 @@ export const UrlBtn = tw.button`
   h-14
   p-3
   rounded-full
-  border
   border-2
   bg-white
   flex

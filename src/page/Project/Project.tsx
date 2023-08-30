@@ -28,7 +28,7 @@ export function Component() {
           date={'2023.05.26 ~ 06.02'}
           intro={'쇼핑몰 기능 구현 솔로 프로젝트'}
           bg='bg-[url("/portfolio/solo-project/soloproject.png")]'
-          link="/project/1"
+          link={Path.Result3}
         />
         <ProjectBox
           title={'04. BAMP-Site'}
