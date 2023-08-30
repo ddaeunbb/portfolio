@@ -35,7 +35,7 @@ export function Component() {
           date={'2022.10.01 ~ 10.17'}
           intro={'연합동아리 BAMP 소개사이트'}
           bg='bg-[url("/portfolio/bamp/bamp.png")]'
-          link="/project/1"
+          link={Path.Result4}
         />
       </SC.ProjectContainer>
     </motion.div>

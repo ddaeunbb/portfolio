@@ -61,6 +61,7 @@ export const IntroImg = tw.div`
   shadow-md
   border-2
   bg-cover
+  bg-center
 `;
 
 export const SemiTitle = tw.h2`
@@ -110,6 +111,7 @@ export const Preview = tw.article`
   shadow-md
   border-2
   bg-cover
+  bg-center
 `;
 
 export const UrlWrap = tw.div`

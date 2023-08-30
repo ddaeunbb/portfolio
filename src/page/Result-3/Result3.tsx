@@ -48,7 +48,7 @@ export function Component() {
                 </SC.UrlBtn>
               </a>
               <a
-                href="https://github.com/ddaeunbb/solo-shoppingmall"
+                href="https://ddaeunbb-solo-project.netlify.app/"
                 target="_blank">
                 <SC.UrlBtn>
                   <Web width={40} height={40} />
@@ -93,11 +93,6 @@ export function Component() {
               <li>Term: 2023.05.26 ~ 06.02</li>
               <li>Refactor: 2023.06.07 ~ 06.09</li>
             </SC.List>
-          </SC.Wrap>
-
-          <SC.Wrap>
-            <SC.SemiTitle>담당</SC.SemiTitle>
-            <SC.Paragraph>부팀장 / 프론트엔드 팀장</SC.Paragraph>
           </SC.Wrap>
 
           <SC.Wrap>
