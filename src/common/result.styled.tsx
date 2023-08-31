@@ -1,5 +1,13 @@
 import tw from 'tailwind-styled-components';
 
+export const ModalContainer = tw.div`
+  fixed
+  w-screen
+  h-screen
+  bg-zinc-600/50
+  z-30
+`;
+
 export const Title = tw.h1`
   font-bold
   text-5xl

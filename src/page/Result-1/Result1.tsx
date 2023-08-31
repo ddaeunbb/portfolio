@@ -1,15 +1,27 @@
 import { motion } from 'framer-motion';
+import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { ReactComponent as Back } from 'public/icon/back.svg';
 import { ReactComponent as Blog } from 'public/icon/blog.svg';
 import { ReactComponent as Github } from 'public/icon/github.svg';
 import { ReactComponent as Web } from 'public/icon/web.svg';
 import * as SC from 'src/common/result.styled';
+import Modal from 'src/components/modal/Modal';
 import { fadePop } from 'src/variants/variants';
 
 export function Component() {
+  const [isOpen, setIsOpen] = useState<boolean>(false);
+  const [modalText, setModalText] = useState<string[]>(['', '']);
+  const modalHandler = (title: string, bg: string) => {
+    setIsOpen(true);
+    setModalText([title, bg]);
+  };
+
   return (
     <>
+      {isOpen && (
+        <Modal title={modalText[0]} bg={modalText[1]} setter={setIsOpen} />
+      )}
       <Link to="/project">
         <SC.BackBtn>
           <Back
@@ -102,7 +114,15 @@ export function Component() {
               <li>
                 swiper 라이브러리를 활용해 게시물 CRUD, 이미지 미리보기 구현
               </li>
-              <SC.Preview className='bg-[url("/public/portfolio/sharepetment/피드올리기.gif")]' />
+              <SC.Preview
+                className='bg-[url("/public/portfolio/sharepetment/피드올리기.gif")]'
+                onClick={() =>
+                  modalHandler(
+                    'swiper 라이브러리를 활용해 게시물 CRUD, 이미지 미리보기 구현',
+                    'bg-[url("/public/portfolio/sharepetment/피드올리기.gif")]',
+                  )
+                }
+              />
               <SC.Preview className='bg-[url("/public/portfolio/sharepetment/피드수정.gif")]' />
               <br />
               <li>좋아요 기능, 댓글 CRUD 기능 구현</li>
