@@ -1,8 +1,7 @@
 import tw from 'tailwind-styled-components';
 
 export const SkillsContainer = tw.section`
-  relative
-  pt-16
+  pt-28
   w-screen
   h-screen
   bg-deeppurple/70
@@ -12,29 +11,32 @@ export const SkillsContainer = tw.section`
   items-center
 `;
 
-export const Title = tw.h1`
-  font-bold
-  text-6xl
-  text-white
-  tracking-wide
-  absolute
+export const TitleWrap = tw.h1`
+  relative
 `;
 
-export const Underline = tw.div`
+export const Title = tw.h1`
+  font-bold
+  text-3xl
+  text-deeppurple
+  tracking-wide
+`;
+
+export const TitleShadow = tw.h1`
   absolute
-  w-44
-  h-3
-  bg-white
-  rounded-full
-  border
-  border-[3px]
-  border-deeppurple
+  font-bold
+  text-3xl
+  text-white
+  tracking-wide
+  top-[1px]
+  right-[4px]
 `;
 
 export const SkillWrap = tw.div`
-  w-[640px]
+  w-[560px]
   flex-wrap
   flex
-  gap-5
+  gap-x-5
+  gap-y-3
   m-auto
 `;

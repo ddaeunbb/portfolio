@@ -64,7 +64,7 @@ export const Profile = tw.div`
   bg-lightpurple
   shadow-md
   bg-cover
-  bg-[url('/profile/profile.png')]
+  bg-[url('/profile/profile.webp')]
 `;
 
 export const Detail = tw.ul`

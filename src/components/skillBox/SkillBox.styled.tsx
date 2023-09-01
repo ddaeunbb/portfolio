@@ -1,8 +1,8 @@
 import tw from 'tailwind-styled-components';
 
 export const SkillBox = tw.div`
-  w-28
-  h-28
+  w-24
+  h-24
   rounded-3xl
   bg-zinc-100
   border-2
@@ -34,8 +34,12 @@ export const SkillOverlay = tw.div`
   text-center
 `;
 
-export const SkillImg = tw.div`
+export const SkillWebp = tw.source`
   w-full
   h-full
-  bg-cover
+`;
+
+export const SkillImg = tw.img`
+  w-full
+  h-full
 `;
