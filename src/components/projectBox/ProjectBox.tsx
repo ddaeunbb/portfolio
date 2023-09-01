@@ -4,7 +4,7 @@ interface ProjectBoxProp {
   title: string;
   date: string;
   intro: string;
-  bg: string;
+  thumbnail: string[];
   link: string;
 }
 
@@ -12,7 +12,7 @@ export default function ProjectBox({
   title,
   date,
   intro,
-  bg,
+  thumbnail,
   link,
 }: ProjectBoxProp) {
   return (
@@ -26,7 +26,11 @@ export default function ProjectBox({
           <SC.Date>○ {date}</SC.Date>
           <SC.Intro>{intro}</SC.Intro>
         </SC.TextWrap>
-        <SC.ProjectImg className={bg} />
+
+        <SC.ThumbnailWrap>
+          <SC.ProjectWebp srcSet={thumbnail[0]} />
+          <SC.ProjectImg src={thumbnail[1]} alt="썸네일" />
+        </SC.ThumbnailWrap>
       </SC.ProjectBox>
     </Link>
   );

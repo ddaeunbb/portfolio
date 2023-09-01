@@ -14,6 +14,7 @@ export const ProjectBox = tw.section`
   duration-[0.2s]
   p-5
   flex
+  items-center
   cursor-pointer
 `;
 
@@ -61,11 +62,27 @@ export const Intro = tw.span`
   max-sm:text-xs
 `;
 
-export const ProjectImg = tw.div`
-  bg-lightpurple
+export const ThumbnailWrap = tw.picture`
   w-[30%]
+  flex
+  justify-center
   h-full
-  bg-cover
+`;
+
+export const ProjectWebp = tw.source` 
+  w-full
+  h-full
   border
   rounded-md
+  object-cover
+  object-top
+`;
+
+export const ProjectImg = tw.img`
+  w-full
+  h-full
+  border
+  rounded-md
+  object-cover
+  object-top
 `;
