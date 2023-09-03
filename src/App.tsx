@@ -12,7 +12,8 @@ function App() {
   const location = useLocation();
 
   return (
-    <SC.Body isProject={pattern.test(location.pathname as string)}>
+    <SC.Body
+      isproject={pattern.test(location.pathname as string) ? 'true' : 'false'}>
       <ScrollRestoration />
       {!pattern.test(location.pathname as string) && <Navbar />}
       {location.pathname === '/' && (

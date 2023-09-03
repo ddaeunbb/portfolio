@@ -24,7 +24,7 @@ export default function Navbar() {
           <Tab link="/" path="Home" />
           <Tab link="/" path="Info" />
           <Tab link="/" path="Skills" />
-          <Tab link={Path.Project} path="Project" />
+          <Tab link={Path.ProjectList} path="Project" />
           <Tab link={Path.Contact} path="Contact" />
         </SC.Tabs>
       )}
@@ -32,7 +32,7 @@ export default function Navbar() {
       {location.pathname === '/project' && (
         <SC.Tabs>
           <Tab link="/" path="ToHome" />
-          <Tab link={Path.Project} path="Project" />
+          <Tab link={Path.ProjectList} path="Project" />
           <Tab link={Path.Contact} path="Contact" />
         </SC.Tabs>
       )}
@@ -40,7 +40,7 @@ export default function Navbar() {
       {pattern.test(location.pathname as string) && (
         <SC.Tabs>
           <Tab link="/" path="ToHome" />
-          <Tab link={Path.Project} path="Projects" />
+          <Tab link={Path.ProjectList} path="Projects" />
           <Tab link={Path.Contact} path="Contact" />
         </SC.Tabs>
       )}

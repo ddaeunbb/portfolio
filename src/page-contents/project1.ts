@@ -1,6 +1,6 @@
-import { ProjectType } from 'src/page-contens/projectType';
+import { ProjectType } from 'src/page-contents/projectType';
 
-export const Project1: ProjectType = {
+const Project1: ProjectType = {
   mainTitle: 'SharePetment',
   introImg: 'bg-[url(/portfolio/sharepetment/sharepetment2.webp)]',
   github: ['https://github.com/SharePetment/SharePetment'],
@@ -53,3 +53,5 @@ export const Project1: ProjectType = {
     ['공유 기능 구현', '', '/public/portfolio/sharepetment/게시물공유.gif'],
   ],
 };
+
+export default Project1;

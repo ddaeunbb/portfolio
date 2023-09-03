@@ -1,6 +1,6 @@
-import { ProjectType } from 'src/page-contens/projectType';
+import { ProjectType } from 'src/page-contents/projectType';
 
-export const Project3: ProjectType = {
+const Project3: ProjectType = {
   mainTitle: 'Solo - Project',
   introImg: 'bg-[url(/portfolio/solo-project/soloproject.webp)]',
   github: [
@@ -35,3 +35,5 @@ export const Project3: ProjectType = {
   videoURL:
     'https://user-images.githubusercontent.com/82816029/243924008-78ce4c37-dcba-4fc5-95e4-c9e9f5c6d380.mp4',
 };
+
+export default Project3;

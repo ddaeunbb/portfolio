@@ -1,6 +1,6 @@
-import { ProjectType } from 'src/page-contens/projectType';
+import { ProjectType } from 'src/page-contents/projectType';
 
-export const Project4: ProjectType = {
+const Project4: ProjectType = {
   mainTitle: 'BAMP - Site',
   introImg: 'bg-[url(/portfolio/bamp/intro.png)]',
   github: ['https://github.com/ddaeunbb/BAMP_site'],
@@ -31,3 +31,5 @@ export const Project4: ProjectType = {
     ],
   ],
 };
+
+export default Project4;

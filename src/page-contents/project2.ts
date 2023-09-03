@@ -1,6 +1,6 @@
-import { ProjectType } from 'src/page-contens/projectType';
+import { ProjectType } from 'src/page-contents/projectType';
 
-export const Project2: ProjectType = {
+const Project2: ProjectType = {
   mainTitle: 'Stackoverflow',
   introImg: 'bg-[url(/portfolio/stackoverflow/stackoverflow.webp)]',
   github: ['https://github.com/ddaeunbb/seb44_pre_015'],
@@ -54,3 +54,5 @@ export const Project2: ProjectType = {
     ],
   ],
 };
+
+export default Project2;
