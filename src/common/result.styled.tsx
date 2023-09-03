@@ -12,8 +12,9 @@ export const Title = tw.h1`
   font-bold
   text-5xl
   max-sm:text-4xl
-  text-deeppurple/90
+  text-deeppurple/60
   z-10
+  m-auto
 `;
 
 export const TitleShadow = tw.h1`
@@ -112,6 +113,12 @@ export const List = tw.ul`
   gap-2
   font-black
   text-zinc-800
+`;
+
+export const PreviewWrap = tw.div`
+  flex
+  flex-col
+  gap-20
 `;
 
 export const Preview = tw.article`

@@ -1,9 +1,13 @@
 import { motion } from 'framer-motion';
+import ReactPlayer from 'react-player';
 import { Link } from 'react-router-dom';
 import { ReactComponent as Back } from 'public/icon/back.svg';
+import { ReactComponent as Blog } from 'public/icon/blog.svg';
 import { ReactComponent as Github } from 'public/icon/github.svg';
 import { ReactComponent as Web } from 'public/icon/web.svg';
 import * as SC from 'src/common/result.styled';
+import PreviewImg from 'src/components/previewImg/PreviewImg';
+import { Project4 as Project } from 'src/page-contens/project4';
 import { fadePop } from 'src/variants/variants';
 
 export function Component() {
@@ -20,84 +24,105 @@ export function Component() {
       </Link>
       <motion.div initial="hidden" variants={fadePop} animate="visible">
         <SC.Container>
-          <div className="relative flex justify-center">
-            <SC.Title>BAMP - Site</SC.Title>
-            <SC.TitleShadow
-              className="left-[202px] max-sm:left-[142px]"
-              style={{ WebkitTextStroke: '1px black' }}>
-              BAMP - Site
-            </SC.TitleShadow>
-          </div>
+          <SC.Title style={{ WebkitTextStroke: '2px #463ED8' }}>
+            {Project.mainTitle}
+          </SC.Title>
 
-          <SC.IntroImg className="bg-[url(/portfolio/bamp/intro.png)]">
+          <SC.IntroImg className={Project.introImg}>
             <SC.UrlWrap>
-              <a href="https://github.com/ddaeunbb/BAMP_site" target="_blank">
-                <SC.UrlBtn>
-                  <Github width={40} height={40} />
-                </SC.UrlBtn>
-              </a>
-              <a href="http://bamp.or.kr/" target="_blank">
+              {Project.github.map(url => (
+                <a href={url} target="_blank">
+                  <SC.UrlBtn>
+                    <Github width={40} height={40} />
+                  </SC.UrlBtn>
+                </a>
+              ))}
+              <a href={Project.deploy} target="_blank">
                 <SC.UrlBtn>
                   <Web width={40} height={40} />
                 </SC.UrlBtn>
               </a>
+              {Project.blog && (
+                <a href={Project.blog} target="_blank">
+                  <SC.UrlBtn>
+                    <Blog width={40} height={40} />
+                  </SC.UrlBtn>
+                </a>
+              )}
             </SC.UrlWrap>
           </SC.IntroImg>
 
           <SC.Wrap>
-            <SC.SemiTitle>밤프 Beta 페이지</SC.SemiTitle>
-            <SC.Paragraph>
-              이전에 참여했었던 공모전 연합동아리 'BAMP'를 홍보하기 위해 베타
-              페이지를 제작하였습니다. 홈페이지 제작 및 홍보를 통해 올해의
-              연합동아리 10위안에 들 수 있었습니다. 추가적으로 공식 홈페이지
-              제작 예정에 있습니다.
-            </SC.Paragraph>
+            <SC.SemiTitle>{Project.semiTitle}</SC.SemiTitle>
+            <SC.Paragraph>{Project.semiContent}</SC.Paragraph>
           </SC.Wrap>
 
           <SC.Wrap>
             <SC.SemiTitle>기술스택</SC.SemiTitle>
             <div className="flex flex-wrap gap-1">
-              <SC.Stack>HTML</SC.Stack>
-              <SC.Stack>CSS</SC.Stack>
-              <SC.Stack>SCSS</SC.Stack>
-              <SC.Stack>JavaScript</SC.Stack>
+              {Project.stacks.map(stack => (
+                <SC.Stack>{stack}</SC.Stack>
+              ))}
             </div>
           </SC.Wrap>
 
           <SC.Wrap>
             <SC.SemiTitle>진행기간</SC.SemiTitle>
             <SC.List>
-              <li>Term: 2022.10.01 - 2023.10.17</li>
+              <li>Term: {Project.terms}</li>
+              {Project.refactor && <li>Refactor: {Project.refactor}</li>}
             </SC.List>
           </SC.Wrap>
 
-          <SC.Wrap>
-            <SC.SemiTitle>팀</SC.SemiTitle>
-            <SC.Paragraph>기획 2명 / 디자인 2명 / 프론트엔드 2명</SC.Paragraph>
-          </SC.Wrap>
+          {Project.team && (
+            <>
+              <SC.Wrap>
+                <SC.SemiTitle>팀</SC.SemiTitle>
+                <SC.Paragraph>{Project.team}</SC.Paragraph>
+              </SC.Wrap>
+              <SC.Wrap>
+                <SC.SemiTitle>담당</SC.SemiTitle>
+                <SC.Paragraph>{Project.role}</SC.Paragraph>
+              </SC.Wrap>
+            </>
+          )}
 
           <SC.Wrap>
             <SC.SemiTitle>구현</SC.SemiTitle>
             <SC.List>
-              <li>네브바 구현 </li>
-              <li>인트로 이후 소개 페이지</li>
-              <li>후원자 페이지</li>
+              {Project.features.map(feature => (
+                <li>{feature}</li>
+              ))}
             </SC.List>
           </SC.Wrap>
 
-          <div>
-            <SC.SemiTitle>구현 이미지</SC.SemiTitle>
-            <SC.List>
-              <li>메인 페이지</li>
-              <SC.Preview className='bg-[url("/public/portfolio/bamp/intro.png")]' />
-              <br />
-              <li>채팅 섹션</li>
-              <SC.Preview className='bg-[url("/public/portfolio/bamp/chat.png")]' />
-              <br />
-              <li>소개 페이지</li>
-              <SC.Preview className='bg-[url("/public/portfolio/bamp/introduction.png")]' />
-            </SC.List>
-          </div>
+          {Project.videoURL && (
+            <div>
+              <SC.SemiTitle>구현 영상</SC.SemiTitle>
+              <SC.VideoWrap>
+                <ReactPlayer
+                  url={Project.videoURL}
+                  playing={true}
+                  controls={true}
+                  width={'100%'}
+                />
+              </SC.VideoWrap>
+            </div>
+          )}
+
+          {Project.imgDetails && (
+            <div>
+              <SC.SemiTitle>구현 이미지</SC.SemiTitle>
+              <SC.PreviewWrap>
+                {Project.imgDetails.map(detail => (
+                  <PreviewImg
+                    title={detail[0]}
+                    thumbnail={[detail[1], detail[2]]}
+                  />
+                ))}
+              </SC.PreviewWrap>
+            </div>
+          )}
         </SC.Container>
       </motion.div>
     </>

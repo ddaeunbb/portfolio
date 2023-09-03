@@ -19,27 +19,36 @@ export function Component() {
           ]}
           link={Path.Result1}
         />
-        {/* <ProjectBox
+        <ProjectBox
           title={'02. Stackoverflow'}
           date={'2023.06.09 - 2023.06.27'}
           intro={'스택오버플로우 클론코딩 및 기능구현'}
-          bg='bg-[url("/portfolio/stackoverflow/stackoverflow.png")]'
+          thumbnail={[
+            'public/portfolio/stackoverflow/stackoverflow.webp',
+            'public/portfolio/stackoverflow/stackoverflow.png',
+          ]}
           link={Path.Result2}
         />
         <ProjectBox
           title={'03. Solo-Project'}
           date={'2023.05.26 ~ 06.02'}
           intro={'쇼핑몰 기능 구현 솔로 프로젝트'}
-          bg='bg-[url("/portfolio/solo-project/soloproject.png")]'
+          thumbnail={[
+            'public/portfolio/solo-project/soloproject.webp',
+            'public/portfolio/solo-project/soloproject.png',
+          ]}
           link={Path.Result3}
         />
         <ProjectBox
           title={'04. BAMP-Site'}
           date={'2022.10.01 ~ 10.17'}
           intro={'연합동아리 BAMP 소개사이트'}
-          bg='bg-[url("/portfolio/bamp/bamp.png")]'
+          thumbnail={[
+            'public/portfolio/bamp/bamp.webp',
+            'public/portfolio/bamp/bamp.png',
+          ]}
           link={Path.Result4}
-        /> */}
+        />
       </SC.ProjectContainer>
     </motion.div>
   );

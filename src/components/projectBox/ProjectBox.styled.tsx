@@ -62,18 +62,19 @@ export const Intro = tw.span`
   max-sm:text-xs
 `;
 
-export const ThumbnailWrap = tw.picture`
+export const ThumbnailWrap = tw.div`
+  bg-blue-400
   w-[30%]
   flex
   justify-center
   h-full
+  border
+  rounded-md
 `;
 
 export const ProjectWebp = tw.source` 
   w-full
   h-full
-  border
-  rounded-md
   object-cover
   object-top
 `;
@@ -81,8 +82,6 @@ export const ProjectWebp = tw.source`
 export const ProjectImg = tw.img`
   w-full
   h-full
-  border
-  rounded-md
   object-cover
   object-top
 `;

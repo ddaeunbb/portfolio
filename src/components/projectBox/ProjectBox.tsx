@@ -28,8 +28,10 @@ export default function ProjectBox({
         </SC.TextWrap>
 
         <SC.ThumbnailWrap>
-          <SC.ProjectWebp srcSet={thumbnail[0]} type="image/webp" />
-          <SC.ProjectImg src={thumbnail[1]} alt="썸네일" />
+          <picture className="w-full h-full">
+            <SC.ProjectWebp srcSet={thumbnail[0]} type="image/webp" />
+            <SC.ProjectImg src={thumbnail[1]} alt="프로젝트 썸네일" />
+          </picture>
         </SC.ThumbnailWrap>
       </SC.ProjectBox>
     </Link>
