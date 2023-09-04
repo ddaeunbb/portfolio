@@ -13,10 +13,6 @@ export const router = createBrowserRouter([
         lazy: () => import('src/page/Project-List/ProjectList'),
       },
       {
-        path: Path.Contact,
-        lazy: () => import('src/page/Contact/Contact.tsx'),
-      },
-      {
         path: Path.Project,
         lazy: () => import('src/page/Project/Project'),
         loader: async ({ params }) => projectLoader(params),

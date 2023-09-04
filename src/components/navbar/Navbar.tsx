@@ -25,7 +25,6 @@ export default function Navbar() {
           <Tab link="/" path="Info" />
           <Tab link="/" path="Skills" />
           <Tab link={Path.ProjectList} path="Project" />
-          <Tab link={Path.Contact} path="Contact" />
         </SC.Tabs>
       )}
 
@@ -33,17 +32,16 @@ export default function Navbar() {
         <SC.Tabs>
           <Tab link="/" path="ToHome" />
           <Tab link={Path.ProjectList} path="Project" />
-          <Tab link={Path.Contact} path="Contact" />
         </SC.Tabs>
       )}
 
-      {pattern.test(location.pathname as string) && (
-        <SC.Tabs>
-          <Tab link="/" path="ToHome" />
-          <Tab link={Path.ProjectList} path="Projects" />
-          <Tab link={Path.Contact} path="Contact" />
-        </SC.Tabs>
-      )}
+      {pattern.test(location.pathname as string) ||
+        (location.pathname === '/contact' && (
+          <SC.Tabs>
+            <Tab link="/" path="ToHome" />
+            <Tab link={Path.ProjectList} path="Projects" />
+          </SC.Tabs>
+        ))}
     </motion.div>
   );
 }
