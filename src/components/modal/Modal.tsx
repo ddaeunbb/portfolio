@@ -1,6 +1,8 @@
-import { useEffect } from 'react';
+import { motion } from 'framer-motion';
+import { useCallback, useEffect } from 'react';
 import { createPortal } from 'react-dom';
 import * as SC from './Modal.styled';
+import { opacityFastVisible } from 'src/variants/variants';
 
 const portalElement = document.getElementById('modal') as HTMLElement;
 
@@ -18,12 +20,25 @@ export default function Modal({ title, bg, setter }: ModalProp) {
     };
   }, []);
 
+  // 모달창 닫는 핸들러
+  const handleModalClose = useCallback(
+    (e: React.MouseEvent<HTMLElement, MouseEvent>) => {
+      if (e.currentTarget === e.target) setter(false);
+    },
+    [setter],
+  );
+
   return createPortal(
-    <SC.ModalContainer>
-      <SC.CloseBtn onClick={() => setter(false)} />
-      <SC.Title style={{ WebkitTextStroke: '2px #463ED8' }}>{title}</SC.Title>
-      <SC.Thumbnail className={bg} />
-    </SC.ModalContainer>,
+    <motion.div
+      variants={opacityFastVisible}
+      initial="hidden"
+      animate="visible">
+      <SC.ModalContainer onClick={e => handleModalClose(e)}>
+        <SC.CloseBtn onClick={() => setter(false)} />
+        <SC.Title style={{ WebkitTextStroke: '2px #463ED8' }}>{title}</SC.Title>
+        <SC.Thumbnail src={bg} />
+      </SC.ModalContainer>
+    </motion.div>,
     portalElement,
   );
 }

@@ -8,6 +8,16 @@ export const opacityVisible = {
   },
 };
 
+export const opacityFastVisible = {
+  hidden: { opacity: 0 },
+  visible: {
+    opacity: 1,
+    transition: {
+      duration: 0.2,
+    },
+  },
+};
+
 export const fadeUp = {
   hidden: { opacity: 0, x: 80 },
   visible: {

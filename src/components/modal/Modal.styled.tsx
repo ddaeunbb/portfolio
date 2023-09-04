@@ -4,7 +4,7 @@ export const ModalContainer = tw.figure`
   fixed
   w-screen
   h-screen
-  bg-zinc-600/50
+  bg-zinc-600/90
   z-30
   flex
   flex-col
@@ -31,12 +31,19 @@ export const Title = tw.h1`
   font-bold
   text-4xl
   text-white
+  bg-lightpurple
+  p-3
+  rounded-xl
 `;
 
-export const Thumbnail = tw.div`
+export const Thumbnail = tw.img`
   mx-auto
   w-[900px]
   h-[500px]
   bg-blue-400
   bg-contain
+  border
+  border-8
+  border-lightpurple
+  rounded-xl
 `;

@@ -19,9 +19,11 @@ export const ImgWrap = tw.div`
 export const ImgWebp = tw.source`
   w-full
   h-full
+  cursor-pointer
 `;
 
 export const Img = tw.img`
   w-full
   h-full
+  cursor-pointer
 `;
