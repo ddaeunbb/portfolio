@@ -1,4 +1,6 @@
+import styled from '@emotion/styled';
 import tw from 'tailwind-styled-components';
+import { Common } from 'src/style/common';
 
 export const ProjectBox = tw.section`
   w-[90%]
@@ -18,14 +20,14 @@ export const ProjectBox = tw.section`
   cursor-pointer
 `;
 
-export const TextWrap = tw.article`
-  relative
-  pl-5
-  w-[70%]
-  h-full
-  flex
-  flex-col
-  justify-center
+export const TextWrap = styled.article`
+  width: 70%;
+  height: 100%;
+  position: relative;
+  padding-left: 1.25rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 `;
 
 export const Title = tw.h1`
@@ -49,9 +51,9 @@ export const TitleShadow = tw.h1`
   text-white
 `;
 
-export const Date = tw.span`
-  text-zinc-400
-  text-xs
+export const Date = styled.span`
+  color: ${Common.colors.zinc400};
+  font-size: 0.75rem;
 `;
 
 export const Intro = tw.span`
@@ -62,26 +64,26 @@ export const Intro = tw.span`
   max-sm:text-xs
 `;
 
-export const ThumbnailWrap = tw.div`
-  bg-blue-400
-  w-[30%]
-  flex
-  justify-center
-  h-full
-  border
-  rounded-md
+export const ThumbnailWrap = styled.div`
+  width: 30%;
+  height: 100%;
+  background-color: ${Common.colors.subColor};
+  display: flex;
+  justify-content: center;
+  border: 1px solid ${Common.colors.baseBorder};
+  border-radius: 0.375rem;
 `;
 
-export const ProjectWebp = tw.source` 
-  w-full
-  h-full
-  object-cover
-  object-top
+export const ProjectWebp = styled.source`
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top;
 `;
 
-export const ProjectImg = tw.img`
-  w-full
-  h-full
-  object-cover
-  object-top
+export const ProjectImg = styled.img`
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top;
 `;

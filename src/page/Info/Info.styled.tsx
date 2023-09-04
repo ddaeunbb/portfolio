@@ -1,13 +1,13 @@
-import tw from 'tailwind-styled-components';
+import styled from '@emotion/styled';
 
-export const InfoContainer = tw.section`
-  w-screen
-  h-screen
-  pt-16
-  flex
-  flex-col
-  justify-center
-  items-center
-  relative
-  bg-gradient-to-b from-lightpurple/70 to-deeppurple/40
+export const InfoContainer = styled.section`
+  width: 100vw;
+  height: 100vh;
+  padding-top: 4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  background: linear-gradient(rgb(218 216 254 / 0.7), rgba(70, 62, 216, 0.4));
 `;

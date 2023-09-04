@@ -1,45 +1,51 @@
-import tw from 'tailwind-styled-components';
+import styled from '@emotion/styled';
+import { Common } from 'src/style/common';
 
-export const SkillBox = tw.div`
-  w-24
-  h-24
-  rounded-3xl
-  bg-zinc-100
-  border-2
-  shadow-lg
-  flex
-  justify-center
-  items-center
-  p-4
-  relative
+export const SkillBox = styled.div`
+  width: 6rem;
+  height: 6rem;
+  border-radius: 1.5rem;
+  background-color: #f4f4f5;
+  border: 2px solid ${Common.colors.baseBorder};
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  padding: 1rem;
+  box-shadow:
+    0 10px 15px -3px rgb(0 0 0 / 0.1),
+    0 4px 6px -4px rgb(0 0 0 / 0.1);
 `;
 
-export const SkillOverlay = tw.div`
-  absolute
-  w-full
-  h-full
-  flex
-  justify-center
-  items-center
-  font-extrabold
-  text-sm
-  text-white
-  bg-zinc-800
-  rounded-3xl
-  opacity-0
-  hover:opacity-100
-  transition-all
-  duration-300
-  ease-in-out
-  text-center
+export const SkillOverlay = styled.div`
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 400;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  color: white;
+  background-color: #27272a;
+  border-radius: 1.5rem;
+  opacity: 0;
+  text-align: center;
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 300ms;
+  &:hover {
+    opacity: 1;
+  }
 `;
 
-export const SkillWebp = tw.source`
-  w-full
-  h-full
+export const SkillWebp = styled.source`
+  width: 100%;
+  height: 100%;
 `;
 
-export const SkillImg = tw.img`
-  w-full
-  h-full
+export const SkillImg = styled.img`
+  width: 100%;
+  height: 100%;
 `;

@@ -1,49 +1,51 @@
-import tw from 'tailwind-styled-components';
+import styled from '@emotion/styled';
+import { Common } from 'src/style/common';
 
-export const ModalContainer = tw.figure`
-  fixed
-  w-screen
-  h-screen
-  bg-zinc-600/90
-  z-30
-  flex
-  flex-col
-  justify-center
-  items-center
-  overflow-y-hidden
-  gap-5
+export const ModalContainer = styled.figure`
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgb(82 82 91 / 0.9);
+  z-index: 30;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow-y: hidden;
+  gap: 1.25rem;
 `;
 
-export const CloseBtn = tw.button`
-  w-8
-  h-8
-  absolute
-  right-8
-  top-8
-  bg-cover
-  bg-[url('/public/icon/close.png')]
-  hover:scale-110
-  transition-all
-  duration-100
+export const CloseBtn = styled.button`
+  width: 2rem;
+  height: 2rem;
+  position: absolute;
+  top: 2rem;
+  right: 2rem;
+  background-size: cover;
+  background-image: url('/public/icon/close.png');
+  &:hover {
+    transform: scale(1.1);
+  }
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 100ms;
 `;
 
-export const Title = tw.h1`
-  font-bold
-  text-4xl
-  text-white
-  bg-lightpurple
-  p-3
-  rounded-xl
+export const Title = styled.h1`
+  font-family: ${Common.fonts.subFont};
+  font-size: 2.25rem;
+  color: white;
+  background-color: ${Common.colors.subColor};
+  padding: 0.75rem;
+  border-radius: 0.75rem;
 `;
 
-export const Thumbnail = tw.img`
-  mx-auto
-  w-[900px]
-  h-[500px]
-  bg-blue-400
-  bg-contain
-  border
-  border-8
-  border-lightpurple
-  rounded-xl
+export const Thumbnail = styled.img`
+  margin: 0px auto;
+  width: 900px;
+  height: 500px;
+  background-color: ${Common.colors.subColor};
+  background-size: contain;
+  border: 8px solid ${Common.colors.subColor};
+  border-radius: 0.75rem;
 `;
