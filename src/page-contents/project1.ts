@@ -38,19 +38,19 @@ const Project1: ProjectType = {
     [
       'swiper 라이브러리를 활용해 게시물 CRUD, 이미지 미리보기 구현',
       '',
-      '/public/portfolio/sharepetment/피드올리기.gif',
+      '/portfolio/sharepetment/피드올리기.gif',
     ],
     [
       '좋아요 기능, 댓글 CRUD 기능 구현',
       '',
-      '/public/portfolio/sharepetment/피드좋아요댓글구독.gif',
+      '/portfolio/sharepetment/피드좋아요댓글구독.gif',
     ],
     [
       'React-Query를 활용한 무한스크롤 구현',
       '',
-      '/public/portfolio/sharepetment/피드불러오기.gif',
+      '/portfolio/sharepetment/피드불러오기.gif',
     ],
-    ['공유 기능 구현', '', '/public/portfolio/sharepetment/게시물공유.gif'],
+    ['공유 기능 구현', '', '/portfolio/sharepetment/게시물공유.gif'],
   ],
 };
 
