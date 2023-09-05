@@ -12,7 +12,7 @@ export default function Intro() {
   return (
     <SC.IntroContainer>
       <motion.div
-        className="w-full h-full flex flex-col justify-center items-center relative"
+        css={SC.MotionCss}
         ref={ref}
         initial="hidden"
         animate={animation}
@@ -35,7 +35,10 @@ export default function Intro() {
                 <span>97.10.22</span>
                 <span>Hansung Univ.</span>
               </SC.ProfileOverlay>
-              <SC.Profile />
+              <SC.Profile
+                src="/public/profile/profile.webp"
+                alt="김다은 이모지사진"
+              />
             </SC.ProfileBox>
 
             {/* 페이지 링크 */}

@@ -36,10 +36,7 @@ export default function TimeBox({
               </SC.Container>
               <SC.Line />
               <SC.Circle direction="left" />
-              <SC.Date
-                direction="left"
-                length={length}
-                style={{ WebkitTextStroke: '1px #463ED8' }}>
+              <SC.Date direction="left" length={length}>
                 {date}
               </SC.Date>
               <div ref={ref} />
@@ -51,10 +48,7 @@ export default function TimeBox({
       return (
         <motion.div initial="hidden" animate={animation} variants={spin}>
           <SC.RightBox>
-            <SC.Date
-              direction="right"
-              length={length}
-              style={{ WebkitTextStroke: '1px #463ED8' }}>
+            <SC.Date direction="right" length={length}>
               {date}
             </SC.Date>
             <SC.Circle direction="right" />

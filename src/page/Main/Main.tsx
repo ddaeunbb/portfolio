@@ -9,7 +9,7 @@ export default function Main() {
   return (
     <SC.MainContainer>
       <motion.div
-        className="w-[35rem] h-[35rem] max-md:w-[30rem] max-md:h-[30rem] rounded-full bg-lightpurple border-2 border-deeppurple"
+        css={SC.MotionCss1}
         initial={{ opacity: 0, scale: 0.5 }}
         animate={{ opacity: 1, scale: 1 }}
         transition={{
@@ -19,19 +19,19 @@ export default function Main() {
         }}
       />
 
-      <Bubble style="absolute left-[-200px]" />
-      <Bubble style="absolute right-[-200px]" />
+      <Bubble style={SC.LeftBubble} />
+      <Bubble style={SC.RightBubble} />
 
-      <div className="absolute left-20 top-[40%] max-md:left-3 max-md:top-[45%]">
+      <SC.TopTitleWrap>
         <BoldText text="FRONTEND" />
-      </div>
+      </SC.TopTitleWrap>
 
-      <div className="absolute right-10 bottom-[20%] max-md:right-3 max-md:bottom-[30%]">
+      <SC.BottomTitleWrap>
         <BoldText text="KIMDAEUN" />
-      </div>
+      </SC.BottomTitleWrap>
 
       <motion.div
-        className="absolute right-0 bottom-0 cursor-pointer"
+        css={SC.MotionCss2}
         initial={{ opacity: 0, scale: 0.5 }}
         animate={{ opacity: 1, scale: 1 }}
         transition={{

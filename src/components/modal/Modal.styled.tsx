@@ -1,5 +1,5 @@
 import styled from '@emotion/styled';
-import { Common } from 'src/style/common';
+import { Common } from 'src/styles/common';
 
 export const ModalContainer = styled.figure`
   position: fixed;
@@ -38,6 +38,7 @@ export const Title = styled.h1`
   background-color: ${Common.colors.subColor};
   padding: 0.75rem;
   border-radius: 0.75rem;
+  -webkit-text-stroke: 2px ${Common.colors.mainColor};
 `;
 
 export const Thumbnail = styled.img`

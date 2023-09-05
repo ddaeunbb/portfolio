@@ -1,25 +1,25 @@
-import tw from 'tailwind-styled-components';
+import styled from '@emotion/styled';
+import { Common } from 'src/styles/common';
 
-export const ProjectContainer = tw.div`
-  m-auto
-  pt-32
-  pb-16
-  flex
-  flex-col
-  justify-center
-  items-center 
-  gap-5
+export const ProjectContainer = styled.div`
+  margin: 0 auto;
+  padding-top: 8rem;
+  padding-bottom: 4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1.25rem;
 `;
 
-export const IntroImg = tw.div`
-  w-[90%]
-  max-w-[700px]
-  h-80
-  bg-lightpurple
-  border
-  border-deeppurple
-  rounded-2xl
-  flex
-  justify-center
-  items-center
+export const IntroImg = styled.div`
+  width: 90%;
+  max-width: 700px;
+  height: 20rem;
+  background-color: ${Common.colors.subColor};
+  border: 1px solid ${Common.colors.mainColor};
+  border-radius: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 `;

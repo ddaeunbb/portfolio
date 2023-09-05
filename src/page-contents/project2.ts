@@ -2,7 +2,7 @@ import { ProjectType } from 'src/page-contents/projectType';
 
 const Project2: ProjectType = {
   mainTitle: 'Stackoverflow',
-  introImg: 'bg-[url(/portfolio/stackoverflow/stackoverflow.webp)]',
+  introImg: 'url(/portfolio/stackoverflow/stackoverflow.webp)',
   github: ['https://github.com/ddaeunbb/seb44_pre_015'],
   deploy: 'https://mz-developer-15.netlify.app/',
   blog: 'https://ddaeunbb.tistory.com/298/',

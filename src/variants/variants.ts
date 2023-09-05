@@ -52,3 +52,16 @@ export const spin = {
     },
   },
 };
+
+export const textVariant = {
+  hidden: { opacity: 0, y: 15 },
+  end: {
+    opacity: 1,
+    y: 0,
+    transition: {
+      type: 'spring',
+      delay: 0.5,
+      stiffness: 100,
+    },
+  },
+};

@@ -35,7 +35,7 @@ export default function Modal({ title, bg, setter }: ModalProp) {
       animate="visible">
       <SC.ModalContainer onClick={e => handleModalClose(e)}>
         <SC.CloseBtn onClick={() => setter(false)} />
-        <SC.Title style={{ WebkitTextStroke: '2px #463ED8' }}>{title}</SC.Title>
+        <SC.Title>{title}</SC.Title>
         <SC.Thumbnail src={bg} />
       </SC.ModalContainer>
     </motion.div>,

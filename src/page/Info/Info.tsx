@@ -11,18 +11,18 @@ export default function Info() {
   return (
     <>
       <SC.InfoContainer>
-        <div className="absolute top-10 drop-shadow-lg">
+        <SC.Wrap>
           <Lottie
             loop
             animationData={CodeJson}
             play
             style={{ width: 300, height: 300 }}
           />
-        </div>
+        </SC.Wrap>
 
         <motion.div
           ref={ref}
-          className="mt-48 flex flex-col gap-14"
+          css={SC.MotionCss}
           initial="hidden"
           animate={animation}
           variants={fadeUp}>

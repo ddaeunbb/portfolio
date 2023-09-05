@@ -1,5 +1,5 @@
 import styled from '@emotion/styled';
-import { Common } from 'src/style/common';
+import { Common } from 'src/styles/common';
 
 export const SkillBox = styled.div`
   width: 6rem;

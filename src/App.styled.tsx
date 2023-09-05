@@ -1,13 +1,14 @@
-import tw from 'tailwind-styled-components';
+import styled from '@emotion/styled';
 
 interface BodyProp {
-  isproject: 'true' | 'false';
+  isproject: boolean;
 }
 
-export const Body = tw.div<BodyProp>`
-  bg-[url('/background/pattern.png')]
-  bg-20%
-  bg-fixed
+export const Body = styled.div<BodyProp>`
+  background-image: url('/background/pattern.png');
+  background-size: 20%;
+  background-attachment: fixed;
   ${props =>
-    props.isproject === 'true' && `bg-[url('/background/grid.png')] bg-contain`}
+    props.isproject &&
+    `background-image: url('/background/grid.png'); background-size: contain;`}
 `;

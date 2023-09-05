@@ -17,29 +17,19 @@ export default function MainSlide() {
       modules={[Autoplay]}
       className="swiper">
       <SwiperSlide className="swiper-slide">
-        <SC.TextSlide style={{ WebkitTextStroke: '3px #463ED8' }}>
-          Frontend
-        </SC.TextSlide>
+        <SC.TextSlide>Frontend</SC.TextSlide>
       </SwiperSlide>
       <SwiperSlide className="swiper-slide">
-        <SC.TextSlide style={{ WebkitTextStroke: '3px #463ED8' }}>
-          HTML/CSS
-        </SC.TextSlide>
+        <SC.TextSlide>HTML/CSS</SC.TextSlide>
       </SwiperSlide>
       <SwiperSlide className="swiper-slide">
-        <SC.TextSlide style={{ WebkitTextStroke: '3px #463ED8' }}>
-          JavaScript
-        </SC.TextSlide>
+        <SC.TextSlide>JavaScript</SC.TextSlide>
       </SwiperSlide>
       <SwiperSlide className="swiper-slide">
-        <SC.TextSlide style={{ WebkitTextStroke: '3px #463ED8' }}>
-          React
-        </SC.TextSlide>
+        <SC.TextSlide>React</SC.TextSlide>
       </SwiperSlide>
       <SwiperSlide className="swiper-slide">
-        <SC.TextSlide style={{ WebkitTextStroke: '3px #463ED8' }}>
-          TypeScript
-        </SC.TextSlide>
+        <SC.TextSlide>TypeScript</SC.TextSlide>
       </SwiperSlide>
     </Swiper>
   );

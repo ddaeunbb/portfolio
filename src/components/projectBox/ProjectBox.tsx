@@ -16,19 +16,17 @@ export default function ProjectBox({
   link,
 }: ProjectBoxProp) {
   return (
-    <Link to={link} className="w-screen flex justify-center">
+    <Link to={link} css={SC.LinkCss}>
       <SC.ProjectBox>
         <SC.TextWrap>
           <SC.Title>{title}</SC.Title>
-          <SC.TitleShadow style={{ WebkitTextStroke: '1px #463ED8' }}>
-            {title}
-          </SC.TitleShadow>
+          <SC.TitleShadow>{title}</SC.TitleShadow>
           <SC.Date>○ {date}</SC.Date>
           <SC.Intro>{intro}</SC.Intro>
         </SC.TextWrap>
 
         <SC.ThumbnailWrap>
-          <picture className="w-full h-full">
+          <picture css={SC.PictureCss}>
             <SC.ProjectWebp srcSet={thumbnail[0]} type="image/webp" />
             <SC.ProjectImg src={thumbnail[1]} alt="프로젝트 썸네일" />
           </picture>

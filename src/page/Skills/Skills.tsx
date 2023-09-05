@@ -5,10 +5,8 @@ export default function Skills() {
   return (
     <SC.SkillsContainer>
       <SC.TitleWrap>
-        <SC.Title style={{ WebkitTextStroke: '1px #463ED8' }}>Skills</SC.Title>
-        <SC.TitleShadow style={{ WebkitTextStroke: '1px #463ED8' }}>
-          Skills
-        </SC.TitleShadow>
+        <SC.Title>Skills</SC.Title>
+        <SC.TitleShadow>Skills</SC.TitleShadow>
       </SC.TitleWrap>
       <SC.SkillWrap>
         <SkillBox
@@ -66,10 +64,8 @@ export default function Skills() {
       </SC.SkillWrap>
 
       <SC.TitleWrap>
-        <SC.Title style={{ WebkitTextStroke: '1px #463ED8' }}>Etc</SC.Title>
-        <SC.TitleShadow style={{ WebkitTextStroke: '1px #463ED8' }}>
-          Etc
-        </SC.TitleShadow>
+        <SC.Title>Etc</SC.Title>
+        <SC.TitleShadow>Etc</SC.TitleShadow>
       </SC.TitleWrap>
 
       <SC.SkillWrap>

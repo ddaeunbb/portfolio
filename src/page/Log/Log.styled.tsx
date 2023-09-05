@@ -1,28 +1,29 @@
-import tw from 'tailwind-styled-components';
+import styled from '@emotion/styled';
+import { Common } from 'src/styles/common';
 
-export const LogContainer = tw.section`
-  w-screen
-  py-16
-  bg-gradient-to-b
-  from-deeppurple/40
-  to-deeppurple/70
+export const LogContainer = styled.section`
+  width: 100vw;
+  padding: 4rem 0;
+  background: linear-gradient(rgb(70 62 216 / 0.4), rgba(70, 62, 216, 0.7));
 `;
 
-export const TimeLine = tw.div`
-  relative
-  w-full
-  m-auto
-  py-4
-  after:absolute
-  after:w-[6px]
-  after:bg-zinc-100
-  after:top-0
-  after:bottom-0
-  after:left-[calc(50%-3px)]
-  after:ml-[-1px]
-  after:rounded-full
-  px-10
-  flex
-  flex-col
-  gap-4
+export const TimeLine = styled.div`
+  position: relative;
+  width: 100%;
+  margin: 0 auto;
+  padding: 1rem 2.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  &:after {
+    content: '';
+    position: absolute;
+    width: 6px;
+    background-color: ${Common.colors.zinc100};
+    top: 0;
+    bottom: 0;
+    left: calc(50% - 3px);
+    margin-left: -1px;
+    border-radius: 9999px;
+  }
 `;

@@ -10,7 +10,7 @@ export default function Navbar() {
 
   return (
     <motion.div
-      className="w-screen h-16 fixed flex z-20 bg-white/50 shadow-md backdrop-blur px-16 gap-5"
+      css={SC.MotionCss}
       initial={{ opacity: 0, y: 15 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{

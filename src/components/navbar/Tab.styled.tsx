@@ -1,5 +1,5 @@
 import styled from '@emotion/styled';
-import { Common } from 'src/style/common';
+import { Common } from 'src/styles/common';
 
 interface TabProp {
   selected: boolean;

@@ -5,7 +5,7 @@ export interface ProjectType {
   mainTitle: string;
   /**
    * 프로젝트 소개 이미지를 tailwind 형식인 'string'으로 입력해주세요.
-   * 예시: 'bg-[url(/portfolio/bamp/intro.png)]'
+   * 예시: 'url(/portfolio/bamp/intro.png)'
    */
   introImg: string;
   /**

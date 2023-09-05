@@ -1,5 +1,5 @@
 import styled from '@emotion/styled';
-import { Common } from 'src/style/common';
+import { Common } from 'src/styles/common';
 
 export const LeftBox = styled.div`
   width: 480px;
@@ -72,4 +72,5 @@ export const Date = styled.span<DirectionProp>`
   ${prop => (prop.direction === 'left' ? 'right: -20%;' : 'left: -16%;')}
   ${prop =>
     prop.length === 'leftlong' ? 'right: -38%;' : prop.length && 'left: -30%;'};
+  -webkit-text-stroke: 1px ${Common.colors.mainColor};
 `;

@@ -1,5 +1,5 @@
 import styled from '@emotion/styled';
-import { Common } from 'src/style/common';
+import { Common } from 'src/styles/common';
 
 export const Prologue = styled.article`
   position: relative;
@@ -25,6 +25,7 @@ export const TitleShadow = styled.h1`
   top: -19px;
   left: 1.75rem;
   padding: 0 0.75rem;
+  -webkit-text-stroke: 1px ${Common.colors.mainColor};
 `;
 
 export const Title = styled.h1`

@@ -2,7 +2,7 @@ import { ProjectType } from 'src/page-contents/projectType';
 
 const Project1: ProjectType = {
   mainTitle: 'SharePetment',
-  introImg: 'bg-[url(/portfolio/sharepetment/sharepetment2.webp)]',
+  introImg: 'url(/portfolio/sharepetment/sharepetment2.webp)',
   github: ['https://github.com/SharePetment/SharePetment'],
   deploy: 'https://sharepetment.site/home',
   blog: 'https://ddaeunbb.tistory.com/305',

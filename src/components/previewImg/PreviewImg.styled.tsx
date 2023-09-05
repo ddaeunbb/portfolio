@@ -1,5 +1,5 @@
 import styled from '@emotion/styled';
-import { Common } from 'src/style/common';
+import { Common } from 'src/styles/common';
 
 export const Summary = styled.summary`
   font-family: ${Common.fonts.subFont};

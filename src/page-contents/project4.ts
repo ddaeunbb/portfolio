@@ -2,7 +2,7 @@ import { ProjectType } from 'src/page-contents/projectType';
 
 const Project4: ProjectType = {
   mainTitle: 'BAMP - Site',
-  introImg: 'bg-[url(/portfolio/bamp/intro.png)]',
+  introImg: 'url(/portfolio/bamp/intro.png)',
   github: ['https://github.com/ddaeunbb/BAMP_site'],
   deploy: 'http://bamp.or.kr/',
   semiTitle: '밤프 Beta 페이지',

@@ -8,10 +8,8 @@ interface TitleBoxProp {
 export default function TitleBox({ title, contents }: TitleBoxProp) {
   return (
     <SC.Prologue>
-      <SC.TitleShadow style={{ WebkitTextStroke: '1px #463ED8' }}>
-        {title}
-      </SC.TitleShadow>
-      <SC.Title style={{ WebkitTextStroke: '1px #463ED8' }}>{title}</SC.Title>
+      <SC.TitleShadow>{title}</SC.TitleShadow>
+      <SC.Title>{title}</SC.Title>
 
       <SC.TextWrap>
         {contents.map((content, idx) => (

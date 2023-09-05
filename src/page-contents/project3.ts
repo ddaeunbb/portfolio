@@ -2,7 +2,7 @@ import { ProjectType } from 'src/page-contents/projectType';
 
 const Project3: ProjectType = {
   mainTitle: 'Solo - Project',
-  introImg: 'bg-[url(/portfolio/solo-project/soloproject.webp)]',
+  introImg: 'url(/portfolio/solo-project/soloproject.webp)',
   github: [
     'https://github.com/ddaeunbb/fe-sprint-coz-shopping',
     'https://github.com/ddaeunbb/solo-shoppingmall',

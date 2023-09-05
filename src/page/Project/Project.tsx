@@ -1,6 +1,7 @@
 import { motion } from 'framer-motion';
 import ReactPlayer from 'react-player';
 import { useLoaderData, Link } from 'react-router-dom';
+import * as SCPROJECT from './Project.styled';
 import { ReactComponent as Back } from 'public/icon/back.svg';
 import { ReactComponent as Blog } from 'public/icon/blog.svg';
 import { ReactComponent as Github } from 'public/icon/github.svg';
@@ -17,20 +18,14 @@ export function Component() {
     <>
       <Link to="/project">
         <SC.BackBtn>
-          <Back
-            className="stroke-deeppurple fill-deeppurple"
-            width={40}
-            height={40}
-          />
+          <Back css={SCPROJECT.BackCss} width={40} height={40} />
         </SC.BackBtn>
       </Link>
       <motion.div initial="hidden" variants={fadePop} animate="visible">
         <SC.Container>
-          <SC.Title style={{ WebkitTextStroke: '2px #463ED8' }}>
-            {Project.mainTitle}
-          </SC.Title>
+          <SC.Title>{Project.mainTitle}</SC.Title>
 
-          <SC.IntroImg className={Project.introImg}>
+          <SC.IntroImg style={{ backgroundImage: `${Project.introImg}` }}>
             <SC.UrlWrap>
               {Project.github.map((url, urlKey) => (
                 <a href={url} target="_blank" key={urlKey}>
@@ -61,11 +56,11 @@ export function Component() {
 
           <SC.Wrap>
             <SC.SemiTitle>기술스택</SC.SemiTitle>
-            <div className="flex flex-wrap gap-1">
+            <SCPROJECT.Wrap>
               {Project.stacks.map((stack, idx) => (
                 <SC.Stack key={idx}>{stack}</SC.Stack>
               ))}
-            </div>
+            </SCPROJECT.Wrap>
           </SC.Wrap>
 
           <SC.Wrap>

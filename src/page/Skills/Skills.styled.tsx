@@ -1,42 +1,47 @@
-import tw from 'tailwind-styled-components';
+import styled from '@emotion/styled';
+import { Common } from 'src/styles/common';
 
-export const SkillsContainer = tw.section`
-  pt-28
-  w-screen
-  h-screen
-  bg-deeppurple/70
-  flex
-  flex-col
-  justify-center
-  items-center
+export const SkillsContainer = styled.section`
+  padding-top: 7rem;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgb(70 62 216 / 0.7);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 `;
 
-export const TitleWrap = tw.h1`
-  relative
+export const TitleWrap = styled.h1`
+  position: relative;
 `;
 
-export const Title = tw.h1`
-  font-bold
-  text-3xl
-  text-deeppurple
-  tracking-wide
+export const Title = styled.h1`
+  font-family: ${Common.fonts.subFont};
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+  color: ${Common.colors.mainColor};
+  letter-spacing: 0.025em;
+  -webkit-text-stroke: 1px ${Common.colors.mainColor};
 `;
 
-export const TitleShadow = tw.h1`
-  absolute
-  font-bold
-  text-3xl
-  text-white
-  tracking-wide
-  top-[1px]
-  right-[4px]
+export const TitleShadow = styled.h1`
+  position: absolute;
+  font-family: ${Common.fonts.subFont};
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+  color: white;
+  letter-spacing: 0.025em;
+  top: 1px;
+  right: 4px;
+  -webkit-text-stroke: 1px ${Common.colors.mainColor};
 `;
 
-export const SkillWrap = tw.div`
-  w-[560px]
-  flex-wrap
-  flex
-  gap-x-5
-  gap-y-3
-  m-auto
+export const SkillWrap = styled.div`
+  width: 560px;
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 1.25rem;
+  row-gap: 0.75rem;
+  margin: auto;
 `;
