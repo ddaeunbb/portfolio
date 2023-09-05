@@ -2,8 +2,8 @@ import styled from '@emotion/styled';
 import { Common } from 'src/styles/common';
 
 export const SkillBox = styled.div`
-  width: 6rem;
-  height: 6rem;
+  width: 3.5rem;
+  height: 3.5rem;
   border-radius: 1.5rem;
   background-color: #f4f4f5;
   border: 2px solid ${Common.colors.baseBorder};

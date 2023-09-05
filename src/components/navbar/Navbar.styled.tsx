@@ -2,7 +2,6 @@ import { css } from '@emotion/react';
 import styled from '@emotion/styled';
 
 export const Logo = styled.div`
-  width: 5rem;
   height: 100%;
   flex-grow: 1;
 `;
@@ -25,8 +24,8 @@ export const MotionCss = css`
     0 4px 6px -1px rgb(0 0 0 / 0.1),
     0 2px 4px -2px rgb(0 0 0 / 0.1);
   backdrop-filter: blur(8px);
-  padding-left: 4rem;
-  padding-right: 4rem;
-  gap: 1.25rem;
+  padding: 0 3rem;
   background-color: rgb(255 255 255 / 0.5);
+  box-sizing: border-box;
+  gap: 1.25rem;
 `;

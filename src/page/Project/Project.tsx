@@ -1,12 +1,11 @@
 import { motion } from 'framer-motion';
 import ReactPlayer from 'react-player';
 import { useLoaderData, Link } from 'react-router-dom';
-import * as SCPROJECT from './Project.styled';
+import * as SC from './Project.styled';
 import { ReactComponent as Back } from 'public/icon/back.svg';
 import { ReactComponent as Blog } from 'public/icon/blog.svg';
 import { ReactComponent as Github } from 'public/icon/github.svg';
 import { ReactComponent as Web } from 'public/icon/web.svg';
-import * as SC from 'src/common/result.styled';
 import PreviewImg from 'src/components/previewImg/PreviewImg';
 import { ProjectType } from 'src/page-contents/projectType';
 import { fadePop } from 'src/variants/variants';
@@ -18,7 +17,7 @@ export function Component() {
     <>
       <Link to="/project">
         <SC.BackBtn>
-          <Back css={SCPROJECT.BackCss} width={40} height={40} />
+          <Back css={SC.BackCss} width={40} height={40} />
         </SC.BackBtn>
       </Link>
       <motion.div initial="hidden" variants={fadePop} animate="visible">
@@ -56,11 +55,11 @@ export function Component() {
 
           <SC.Wrap>
             <SC.SemiTitle>기술스택</SC.SemiTitle>
-            <SCPROJECT.Wrap>
+            <SC.StackWrap>
               {Project.stacks.map((stack, idx) => (
                 <SC.Stack key={idx}>{stack}</SC.Stack>
               ))}
-            </SCPROJECT.Wrap>
+            </SC.StackWrap>
           </SC.Wrap>
 
           <SC.Wrap>

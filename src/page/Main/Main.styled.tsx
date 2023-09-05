@@ -6,7 +6,7 @@ export const MainContainer = styled.section`
   width: 100vw;
   height: 100vh;
   overflow: hidden;
-  padding-top: 4rem;
+  padding-top: 3rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -47,8 +47,7 @@ export const RightBubble = css`
 export const MotionCss2 = css`
   position: absolute;
   right: 0;
-  bottom: 0;
-  cursor: pointer;
+  bottom: 3rem;
 `;
 
 export const MotionCss1 = css`

@@ -33,7 +33,7 @@ export default function Tab({ path, link }: TabProp) {
     case 'Home':
       return (
         <SC.Tab
-          selected={location.pathname === link && position < 760}
+          selected={location.pathname === link && position < 780}
           onClick={() => {
             window.scrollTo({ top: 0, behavior: 'smooth' });
           }}>
@@ -52,10 +52,10 @@ export default function Tab({ path, link }: TabProp) {
       return (
         <SC.Tab
           selected={
-            location.pathname === link && position >= 760 && position < 2710
+            location.pathname === link && position >= 780 && position < 2740
           }
           onClick={() => {
-            window.scrollTo({ top: 760, behavior: 'smooth' });
+            window.scrollTo({ top: 780, behavior: 'smooth' });
           }}>
           Info
         </SC.Tab>
@@ -64,9 +64,9 @@ export default function Tab({ path, link }: TabProp) {
     case 'Skills':
       return (
         <SC.Tab
-          selected={location.pathname === link && position > 2710}
+          selected={location.pathname === link && position > 2740}
           onClick={() => {
-            window.scrollTo({ top: 3480, behavior: 'smooth' });
+            window.scrollTo({ top: 3464, behavior: 'smooth' });
           }}>
           Skills
         </SC.Tab>

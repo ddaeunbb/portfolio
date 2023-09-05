@@ -3,7 +3,6 @@ import styled from '@emotion/styled';
 import { Common } from 'src/styles/common';
 
 export const IntroContainer = styled.section`
-  padding-top: 4rem;
   width: 100vw;
   height: 100vh;
   background-color: rgb(218 216 254 / 0.7);
@@ -11,7 +10,7 @@ export const IntroContainer = styled.section`
 
 export const SqaureBox = styled.div`
   width: 80%;
-  height: 75%;
+  height: 70%;
   background-color: white;
   display: flex;
   flex-direction: column;

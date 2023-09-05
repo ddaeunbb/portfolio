@@ -3,8 +3,8 @@ import { Common } from 'src/styles/common';
 
 export const Prologue = styled.article`
   position: relative;
-  width: 900px;
-  height: 8rem;
+  width: 800px;
+  height: 5.5rem;
   border-radius: 1.5rem;
   border: 4px solid rgb(70 62 216 / 0.7);
   background-color: white;

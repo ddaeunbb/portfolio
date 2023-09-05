@@ -3,14 +3,13 @@ import { Common } from 'src/styles/common';
 
 export const LogContainer = styled.section`
   width: 100vw;
-  padding: 4rem 0;
   background: linear-gradient(rgb(70 62 216 / 0.4), rgba(70, 62, 216, 0.7));
 `;
 
 export const TimeLine = styled.div`
   position: relative;
   width: 100%;
-  margin: 0 auto;
+  margin: auto;
   padding: 1rem 2.5rem;
   display: flex;
   flex-direction: column;

@@ -2,6 +2,7 @@ import styled from '@emotion/styled';
 import { Common } from 'src/styles/common';
 
 export const SkillsContainer = styled.section`
+  box-sizing: border-box;
   padding-top: 7rem;
   width: 100vw;
   height: 100vh;
@@ -38,7 +39,7 @@ export const TitleShadow = styled.h1`
 `;
 
 export const SkillWrap = styled.div`
-  width: 560px;
+  width: 540px;
   display: flex;
   flex-wrap: wrap;
   column-gap: 1.25rem;

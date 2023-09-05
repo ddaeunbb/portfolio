@@ -14,6 +14,7 @@ export const ProjectBox = styled.section`
     0 4px 6px -4px rgb(0 0 0 / 0.1);
   display: flex;
   align-items: center;
+  box-sizing: border-box;
   cursor: pointer;
   transition-duration: 0.2s;
   padding: 1.25rem;
@@ -21,7 +22,6 @@ export const ProjectBox = styled.section`
     background-color: ${Common.colors.subColor};
     filter: brightness(0.95);
   }
-
   &:active {
     transform: scale(0.96);
   }
@@ -35,6 +35,7 @@ export const TextWrap = styled.article`
   display: flex;
   flex-direction: column;
   justify-content: center;
+  box-sizing: border-box;
 `;
 
 export const Title = styled.h1`
