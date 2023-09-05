@@ -13,7 +13,7 @@ export function Component() {
           date={'2023.06.28 - 2023.7.24'}
           intro={'반려동물 일상 공유 SNS 및 산책 서비스'}
           thumbnail={[
-            'public/portfolio/sharepetment/sharepetment.webp',
+            '/portfolio/sharepetment/sharepetment.webp',
             'public/portfolio/sharepetment/sharepetment.png',
           ]}
           link={'/project/1'}
@@ -23,7 +23,7 @@ export function Component() {
           date={'2023.06.09 - 2023.06.27'}
           intro={'스택오버플로우 클론코딩 및 기능구현'}
           thumbnail={[
-            'public/portfolio/stackoverflow/stackoverflow.webp',
+            '/portfolio/stackoverflow/stackoverflow.webp',
             'public/portfolio/stackoverflow/stackoverflow.png',
           ]}
           link={'/project/2'}
@@ -33,7 +33,7 @@ export function Component() {
           date={'2023.05.26 ~ 06.02'}
           intro={'쇼핑몰 기능 구현 솔로 프로젝트'}
           thumbnail={[
-            'public/portfolio/solo-project/soloproject.webp',
+            '/portfolio/solo-project/soloproject.webp',
             'public/portfolio/solo-project/soloproject.png',
           ]}
           link={'/project/3'}
@@ -43,7 +43,7 @@ export function Component() {
           date={'2022.10.01 ~ 10.17'}
           intro={'연합동아리 BAMP 소개사이트'}
           thumbnail={[
-            'public/portfolio/bamp/bamp.webp',
+            '/portfolio/bamp/bamp.webp',
             'public/portfolio/bamp/bamp.png',
           ]}
           link={'/project/4'}

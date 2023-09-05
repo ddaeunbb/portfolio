@@ -35,10 +35,7 @@ export default function Intro() {
                 <span>97.10.22</span>
                 <span>Hansung Univ.</span>
               </SC.ProfileOverlay>
-              <SC.Profile
-                src="/public/profile/profile.webp"
-                alt="김다은 이모지사진"
-              />
+              <SC.Profile src="/profile/profile.webp" alt="김다은 이모지사진" />
             </SC.ProfileBox>
 
             {/* 페이지 링크 */}
