@@ -4,9 +4,11 @@ import { Common } from 'src/styles/common';
 export const LogContainer = styled.section`
   width: 100vw;
   background: linear-gradient(rgb(70 62 216 / 0.4), rgba(70, 62, 216, 0.7));
+  box-sizing: border-box;
 `;
 
 export const TimeLine = styled.div`
+  box-sizing: border-box;
   position: relative;
   width: 100%;
   margin: auto;

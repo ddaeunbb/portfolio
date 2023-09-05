@@ -12,14 +12,16 @@ export const ProjectContainer = styled.div`
   gap: 1.25rem;
 `;
 
-export const IntroImg = styled.div`
+export const IntroImg = styled.img`
   width: 90%;
   max-width: 700px;
-  height: 20rem;
+  height: 18rem;
   background-color: ${Common.colors.subColor};
-  border: 1px solid ${Common.colors.mainColor};
+  border: 1px solid ${Common.colors.baseBorder};
   border-radius: 1rem;
   display: flex;
   justify-content: center;
   align-items: center;
+  object-fit: cover;
+  object-position: center;
 `;

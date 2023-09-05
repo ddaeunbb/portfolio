@@ -7,7 +7,7 @@ export function Component() {
   return (
     <motion.div initial="hidden" variants={fadePop} animate="visible">
       <SC.ProjectContainer>
-        <SC.IntroImg>프로젝트 소개 이미지</SC.IntroImg>
+        <SC.IntroImg src="/portfolio/project.webp" />
         <ProjectBox
           title={'01. SharePetment'}
           date={'2023.06.28 - 2023.7.24'}
