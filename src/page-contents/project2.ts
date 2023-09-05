@@ -34,23 +34,23 @@ const Project2: ProjectType = {
   imgDetails: [
     [
       '메인페이지 (무한스크롤)',
-      '/public/portfolio/stackoverflow/stackoverflow.webp',
-      '/public/portfolio/stackoverflow/stackoverflow.png',
+      '/portfolio/stackoverflow/stackoverflow.webp',
+      '/portfolio/stackoverflow/stackoverflow.png',
     ],
     [
       '검색 키워드 입력 시, 검색 페이지',
-      '/public/portfolio/stackoverflow/검색기능.webp',
-      '/public/portfolio/stackoverflow/검색기능.png',
+      '/portfolio/stackoverflow/검색기능.webp',
+      '/portfolio/stackoverflow/검색기능.png',
     ],
     [
       '게시물 디테일 페이지 (좋아요 기능, 댓글 CRUD)',
-      '/public/portfolio/stackoverflow/질문작성페이지.webp',
-      '/public/portfolio/stackoverflow/질문작성페이지.png',
+      '/portfolio/stackoverflow/질문작성페이지.webp',
+      '/portfolio/stackoverflow/질문작성페이지.png',
     ],
     [
       '마이페이지 (Google Oauth)',
-      '/public/portfolio/stackoverflow/마이페이지.webp',
-      '/public/portfolio/stackoverflow/마이페이지.png',
+      '/portfolio/stackoverflow/마이페이지.webp',
+      '/portfolio/stackoverflow/마이페이지.png',
     ],
   ],
 };

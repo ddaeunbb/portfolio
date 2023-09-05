@@ -2,11 +2,11 @@ import { motion } from 'framer-motion';
 import ReactPlayer from 'react-player';
 import { useLoaderData, Link } from 'react-router-dom';
 import * as SC from './Project.styled';
-import { ReactComponent as Back } from 'public/icon/back.svg';
-import { ReactComponent as Blog } from 'public/icon/blog.svg';
-import { ReactComponent as Github } from 'public/icon/github.svg';
-import { ReactComponent as Web } from 'public/icon/web.svg';
 import PreviewImg from 'src/components/previewImg/PreviewImg';
+import { ReactComponent as Back } from 'src/icon/back.svg';
+import { ReactComponent as Blog } from 'src/icon/blog.svg';
+import { ReactComponent as Github } from 'src/icon/github.svg';
+import { ReactComponent as Web } from 'src/icon/web.svg';
 import { ProjectType } from 'src/page-contents/projectType';
 import { fadePop } from 'src/variants/variants';
 

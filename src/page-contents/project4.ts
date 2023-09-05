@@ -14,20 +14,12 @@ const Project4: ProjectType = {
   role: '프론트엔드 팀원',
   features: ['네브바 구현', '인트로 이후 소개 페이지', '후원자 페이지'],
   imgDetails: [
-    [
-      '메인페이지',
-      '/public/portfolio/bamp/intro.webp',
-      '/public/portfolio/bamp/intro.png',
-    ],
-    [
-      '채팅 섹션',
-      '/public/portfolio/bamp/chat.webp',
-      '/public/portfolio/bamp/chat.png',
-    ],
+    ['메인페이지', '/portfolio/bamp/intro.webp', '/portfolio/bamp/intro.png'],
+    ['채팅 섹션', '/portfolio/bamp/chat.webp', '/portfolio/bamp/chat.png'],
     [
       '소개페이지',
-      '/public/portfolio/bamp/introduction.webp',
-      '/public/portfolio/bamp/introduction.png',
+      '/portfolio/bamp/introduction.webp',
+      '/portfolio/bamp/introduction.png',
     ],
   ],
 };

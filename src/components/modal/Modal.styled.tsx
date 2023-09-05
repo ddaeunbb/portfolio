@@ -22,7 +22,7 @@ export const CloseBtn = styled.button`
   top: 2rem;
   right: 2rem;
   background-size: cover;
-  background-image: url('/public/icon/close.png');
+  background-image: url('src/icon/close.png');
   &:hover {
     transform: scale(1.1);
   }
