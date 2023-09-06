@@ -5,37 +5,40 @@ export const Prologue = styled.article`
   position: relative;
   width: 800px;
   height: 5.5rem;
-  border-radius: 1.5rem;
-  border: 4px solid rgb(70 62 216 / 0.7);
-  background-color: white;
   padding-top: 2rem;
-  padding-left: 2.5rem;
   padding-right: 2.5rem;
+  padding-left: 2.5rem;
+  border: 4px solid rgb(70 62 216 / 70%);
+
+  background-color: white;
+  border-radius: 1.5rem;
   box-shadow:
-    0 10px 15px -3px rgb(0 0 0 / 0.1),
-    0 4px 6px -4px rgb(0 0 0 / 0.1);
+    0 10px 15px -3px rgb(0 0 0 / 10%),
+    0 4px 6px -4px rgb(0 0 0 / 10%);
 `;
 
 export const TitleShadow = styled.h1`
-  font-family: ${Common.fonts.subFont};
-  font-size: 1.875rem;
-  line-height: 2.25rem;
-  color: ${Common.colors.mainColor};
   position: absolute;
   top: -19px;
   left: 1.75rem;
   padding: 0 0.75rem;
+
+  color: ${Common.colors.mainColor};
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+  font-family: ${Common.fonts.subFont};
   -webkit-text-stroke: 1px ${Common.colors.mainColor};
 `;
 
 export const Title = styled.h1`
   position: absolute;
-  font-family: ${Common.fonts.subFont};
-  left: 2.25rem;
   top: -22px;
+  left: 2.25rem;
+
+  color: white;
   font-size: 1.875rem;
   line-height: 2.25rem;
-  color: white;
+  font-family: ${Common.fonts.subFont};
 `;
 
 export const TextWrap = styled.div`
@@ -45,7 +48,7 @@ export const TextWrap = styled.div`
 `;
 
 export const Text = styled.p`
+  font-weight: 900;
   font-size: 1.125rem;
   line-height: 1.75rem;
-  font-weight: 900;
 `;

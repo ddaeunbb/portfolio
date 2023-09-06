@@ -5,21 +5,23 @@ import { Common } from 'src/styles/common';
 export const IntroContainer = styled.section`
   width: 100vw;
   height: 100vh;
-  background-color: rgb(218 216 254 / 0.7);
+
+  background-color: rgb(218 216 254 / 70%);
 `;
 
 export const SqaureBox = styled.div`
+  display: flex;
   width: 80%;
   height: 70%;
+
   background-color: white;
-  display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   border-radius: 0.75rem;
   box-shadow:
-    0 10px 15px -3px rgb(0 0 0 / 0.1),
-    0 4px 6px -4px rgb(0 0 0 / 0.1);
+    0 10px 15px -3px rgb(0 0 0 / 10%),
+    0 4px 6px -4px rgb(0 0 0 / 10%);
 `;
 
 export const InfoWrap = styled.div`
@@ -34,31 +36,35 @@ export const ProfileBox = styled.div`
 
 export const ProfileEffect = styled.div`
   position: absolute;
-  z-index: 20;
   top: 0;
   left: -10px;
+  z-index: 20;
 `;
 
 export const ProfileOverlay = styled.div`
+  display: flex;
   position: absolute;
   z-index: 10;
-  display: flex;
+  width: 11rem;
+  height: 11rem;
+
+  background-color: rgb(24 24 27 / 70%);
+
+  color: white;
+  font-weight: 600;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   gap: 0.75rem;
   border-radius: 9999px;
-  width: 11rem;
-  height: 11rem;
-  background-color: rgb(24 24 27 / 0.7);
-  font-size: 0.875rem;
-  line-height: 1.25rem;
-  font-weight: 600;
-  color: white;
   opacity: 0;
   transition-duration: 300ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
   &:hover {
+    /* stylelint-disable-next-line declaration-empty-line-before */
     opacity: 1;
   }
 `;
@@ -67,18 +73,19 @@ export const Profile = styled.img`
   width: 11rem;
   height: 11rem;
   border-radius: 9999px;
+
   background-color: ${Common.colors.subColor};
   box-shadow:
-    0 4px 6px -1px rgb(0 0 0 / 0.1),
-    0 2px 4px -2px rgb(0 0 0 / 0.1);
+    0 4px 6px -1px rgb(0 0 0 / 10%),
+    0 2px 4px -2px rgb(0 0 0 / 10%);
   object-fit: cover;
 `;
 
 export const Detail = styled.ul`
+  display: flex;
   width: 24rem;
   height: 15rem;
   border-radius: 1.5rem;
-  display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -86,33 +93,34 @@ export const Detail = styled.ul`
 `;
 
 export const Content = styled.article`
+  display: flex;
   width: 600px;
   margin-top: 1.25rem;
-  display: flex;
   flex-direction: column;
   gap: 0.25rem;
 `;
 
 export const Title = styled.h1`
   font-family: ${Common.fonts.subFont};
+
   color: ${Common.colors.zinc700};
   font-size: 1.25rem;
   line-height: 1.75rem;
 `;
 
 export const Text = styled.p`
-  font-size: 1rem;
-  font-weight: 900;
-  line-height: 2.25rem;
   color: ${Common.colors.zinc700};
+  font-weight: 900;
+  font-size: 1rem;
+  line-height: 2.25rem;
 `;
 
 export const MotionCss = css`
+  display: flex;
+  position: relative;
   width: 100%;
   height: 100%;
-  display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  position: relative;
 `;

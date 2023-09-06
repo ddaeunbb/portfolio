@@ -3,24 +3,26 @@ import styled from '@emotion/styled';
 import { Common } from 'src/styles/common';
 
 export const MainContainer = styled.section`
+  display: flex;
+  overflow: hidden;
+  position: relative;
   width: 100vw;
   height: 100vh;
-  overflow: hidden;
   padding-top: 3rem;
-  display: flex;
   justify-content: center;
   align-items: center;
-  position: relative;
-  background: linear-gradient(white, rgba(218 216 254 / 0.7));
+  background: linear-gradient(white, rgba(218 216 254 / 70%));
 `;
 
 export const TopTitleWrap = styled.div`
   position: absolute;
-  left: 5rem;
   top: 40%;
-  @media not all and (min-width: 768px) {
-    left: 0.75rem;
+  left: 5rem;
+
+  @media not all and (width >= 768px) {
+    /* stylelint-disable-next-line declaration-empty-line-before */
     top: 45%;
+    left: 0.75rem;
   }
 `;
 
@@ -28,7 +30,9 @@ export const BottomTitleWrap = styled.div`
   position: absolute;
   right: 2.5rem;
   bottom: 20%;
-  @media not all and (min-width: 768px) {
+
+  @media not all and (width >= 768px) {
+    /* stylelint-disable-next-line declaration-empty-line-before */
     right: 0.75rem;
     bottom: 30%;
   }
@@ -53,10 +57,13 @@ export const MotionCss2 = css`
 export const MotionCss1 = css`
   width: 35rem;
   height: 35rem;
-  border-radius: 9999px;
-  background-color: ${Common.colors.subColor};
   border: 2px solid ${Common.colors.mainColor};
-  @media not all and (min-width: 768px) {
+
+  background-color: ${Common.colors.subColor};
+  border-radius: 9999px;
+
+  @media not all and (width >= 768px) {
+    /* stylelint-disable-next-line declaration-empty-line-before */
     width: 30rem;
     height: 30rem;
   }
