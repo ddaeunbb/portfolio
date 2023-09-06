@@ -10,5 +10,5 @@ export const Body = styled.div<BodyProp>`
   background-attachment: fixed;
   ${props =>
     props.isproject &&
-    `background-image: url('/background/grid.png'); background-size: contain;`}
+    `background-image: url('/background/grid.webp'); background-size: contain;`}
 `;
