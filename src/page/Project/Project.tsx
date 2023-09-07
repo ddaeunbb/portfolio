@@ -22,7 +22,7 @@ export function Component() {
       </Link>
       <motion.div initial="hidden" variants={fadePop} animate="visible">
         <SC.Container>
-          <SC.Title css={SC.TitleMedia}>{Project.mainTitle}</SC.Title>
+          <SC.Title>{Project.mainTitle}</SC.Title>
 
           <SC.IntroImg style={{ backgroundImage: `${Project.introImg}` }}>
             <SC.UrlWrap>

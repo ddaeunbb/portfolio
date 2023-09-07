@@ -78,7 +78,7 @@ export const TitleShadow = styled.h1`
   @media (max-width: 640px) {
     /* stylelint-disable-next-line declaration-empty-line-before */
     top: 28px;
-    left: 12px;
+    left: 10px;
 
     font-size: 1.2rem;
     line-height: 2rem;
@@ -100,7 +100,7 @@ export const Intro = styled.span`
 
   @media (max-width: 640px) {
     /* stylelint-disable-next-line declaration-empty-line-before */
-    font-size: 0.3rem;
+    font-size: 0.7rem;
     line-height: 1rem;
   }
 `;

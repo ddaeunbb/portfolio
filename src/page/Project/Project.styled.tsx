@@ -20,9 +20,7 @@ export const Title = styled.h1`
   line-height: 1;
   font-family: ${Common.fonts.subFont};
   -webkit-text-stroke: 2px ${Common.colors.mainColor};
-`;
 
-export const TitleMedia = css`
   @media (max-width: 640px) {
     /* stylelint-disable-next-line declaration-empty-line-before */
     font-size: 2.25rem;
