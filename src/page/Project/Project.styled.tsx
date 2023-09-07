@@ -20,24 +20,10 @@ export const Title = styled.h1`
   line-height: 1;
   font-family: ${Common.fonts.subFont};
   -webkit-text-stroke: 2px ${Common.colors.mainColor};
-
-  @media not all and (width >= 640px) {
-    /* stylelint-disable-next-line declaration-empty-line-before */
-    font-size: 2.25rem;
-    line-height: 2.5rem;
-  }
 `;
 
-export const TitleShadow = styled.h1`
-  position: absolute;
-  left: 170px;
-
-  color: white;
-  font-size: 3rem;
-  line-height: 1;
-  font-family: ${Common.fonts.subFont};
-
-  @media not all and (width >= 640px) {
+export const TitleMedia = css`
+  @media (width <= 640px) {
     /* stylelint-disable-next-line declaration-empty-line-before */
     font-size: 2.25rem;
     line-height: 2.5rem;
@@ -155,8 +141,10 @@ export const PreviewWrap = styled.div`
   display: flex;
   flex-direction: column;
   gap: 5rem;
+`;
 
-  @media not all and (width >= 640px) {
+export const PreviewWrapMedia = css`
+  @media (width <= 640px) {
     /* stylelint-disable-next-line declaration-empty-line-before */
     gap: 3rem;
   }

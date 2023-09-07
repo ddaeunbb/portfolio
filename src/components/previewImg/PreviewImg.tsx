@@ -20,7 +20,7 @@ export default function PreviewImg({ title, thumbnail }: PreviewImgProp) {
       )}
       <details open>
         <SC.Summary>{title}</SC.Summary>
-        <SC.ImgWrap>
+        <SC.ImgWrap css={SC.ImgWrapMedia}>
           <picture onClick={() => setIsOpen(true)}>
             <SC.ImgWebp srcSet={thumbnail[0]} type="image/webp" />
             <SC.Img src={thumbnail[1]} alt={title} />

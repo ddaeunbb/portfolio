@@ -22,7 +22,7 @@ export function Component() {
       </Link>
       <motion.div initial="hidden" variants={fadePop} animate="visible">
         <SC.Container>
-          <SC.Title>{Project.mainTitle}</SC.Title>
+          <SC.Title css={SC.TitleMedia}>{Project.mainTitle}</SC.Title>
 
           <SC.IntroImg style={{ backgroundImage: `${Project.introImg}` }}>
             <SC.UrlWrap>
@@ -109,7 +109,7 @@ export function Component() {
           {Project.imgDetails && (
             <div>
               <SC.SemiTitle>구현 이미지</SC.SemiTitle>
-              <SC.PreviewWrap>
+              <SC.PreviewWrap css={SC.PreviewWrapMedia}>
                 {Project.imgDetails.map((detail, detailKey) => (
                   <PreviewImg
                     key={detailKey}
