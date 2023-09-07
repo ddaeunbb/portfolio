@@ -7,7 +7,6 @@ module.exports = {
     return [
       `npx eslint --fix ${filenames.join(' ')}`,
       `npx prettier --write ${filenames.join(' ')}`,
-      `npx stylelint --ignore-path .gitignore ${filenames.join(' ')}`,
     ];
   },
 };

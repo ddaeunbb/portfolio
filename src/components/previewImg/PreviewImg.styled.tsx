@@ -1,4 +1,3 @@
-import { css } from '@emotion/react';
 import styled from '@emotion/styled';
 import { Common } from 'src/styles/common';
 
@@ -20,10 +19,8 @@ export const ImgWrap = styled.div`
   box-shadow:
     0 4px 6px -1px rgb(0 0 0 / 10%),
     0 2px 4px -2px rgb(0 0 0 / 10%);
-`;
 
-export const ImgWrapMedia = css`
-  @media (width < 640px) {
+  @media (max-width: 640px) {
     /* stylelint-disable-next-line declaration-empty-line-before */
     width: 20rem;
     height: 13rem;
