@@ -23,7 +23,7 @@ export const Title = styled.h1`
 `;
 
 export const TitleMedia = css`
-  @media (width <= 640px) {
+  @media (max-width: 640px) {
     /* stylelint-disable-next-line declaration-empty-line-before */
     font-size: 2.25rem;
     line-height: 2.5rem;
@@ -144,7 +144,7 @@ export const PreviewWrap = styled.div`
 `;
 
 export const PreviewWrapMedia = css`
-  @media (width <= 640px) {
+  @media (ma-width: 640px) {
     /* stylelint-disable-next-line declaration-empty-line-before */
     gap: 3rem;
   }

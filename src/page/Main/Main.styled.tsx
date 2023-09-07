@@ -19,7 +19,7 @@ export const TopTitleWrap = styled.div`
   top: 40%;
   left: 5rem;
 
-  @media not all and (width >= 768px) {
+  @media (max-width: 768px) {
     /* stylelint-disable-next-line declaration-empty-line-before */
     top: 45%;
     left: 0.75rem;
@@ -31,7 +31,7 @@ export const BottomTitleWrap = styled.div`
   right: 2.5rem;
   bottom: 20%;
 
-  @media not all and (width >= 768px) {
+  @media (max-width: 768px) {
     /* stylelint-disable-next-line declaration-empty-line-before */
     right: 0.75rem;
     bottom: 30%;
@@ -62,7 +62,7 @@ export const MotionCss1 = css`
   background-color: ${Common.colors.subColor};
   border-radius: 9999px;
 
-  @media not all and (width >= 768px) {
+  @media (max-width: 768px) {
     /* stylelint-disable-next-line declaration-empty-line-before */
     width: 30rem;
     height: 30rem;

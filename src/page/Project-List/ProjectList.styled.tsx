@@ -26,7 +26,7 @@ export const IntroImg = styled.img`
   object-fit: cover;
   object-position: center;
 
-  @media not all and (width >= 640px) {
+  @media (max-width: 640px) {
     /* stylelint-disable-next-line declaration-empty-line-before */
     height: 9rem;
   }

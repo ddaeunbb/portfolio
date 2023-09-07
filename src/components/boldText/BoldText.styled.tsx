@@ -12,13 +12,13 @@ export const Text = styled.h1`
   filter: drop-shadow(0 1px 2px rgb(0 0 0 / 10%))
     drop-shadow(0 1px 1px rgb(0 0 0 / 6%));
 
-  @media not all and (width >= 768px) {
+  @media (max-width: 768px) {
     /* stylelint-disable-next-line declaration-empty-line-before */
     font-size: 6rem;
     line-height: 1;
   }
 
-  @media not all and (width >= 640px) {
+  @media (max-width: 640px) {
     /* stylelint-disable-next-line declaration-empty-line-before */
     font-size: 4.5rem;
     line-height: 1;
@@ -41,13 +41,13 @@ export const BackText = styled.h1`
   filter: drop-shadow(0 1px 2px rgb(0 0 0 / 10%))
     drop-shadow(0 1px 1px rgb(0 0 0 / 6%));
 
-  @media not all and (width >= 768px) {
+  @media (max-width: 768px) {
     /* stylelint-disable-next-line declaration-empty-line-before */
     font-size: 6rem;
     line-height: 1;
   }
 
-  @media not all and (width >= 640px) {
+  @media (max-width: 640px) {
     /* stylelint-disable-next-line declaration-empty-line-before */
     font-size: 4.5rem;
     line-height: 1;

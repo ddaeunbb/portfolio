@@ -42,7 +42,7 @@ export const TextWrap = styled.article`
   justify-content: center;
   box-sizing: border-box;
 
-  @media (width < 640px) {
+  @media (max-width: 640px) {
     /* stylelint-disable-next-line declaration-empty-line-before */
     padding-left: 0.5rem;
   }
@@ -57,7 +57,7 @@ export const Title = styled.h1`
   line-height: 2.25rem;
   font-family: ${Common.fonts.subFont};
 
-  @media not all and (width >= 640px) {
+  @media (max-width: 640px) {
     /* stylelint-disable-next-line declaration-empty-line-before */
     font-size: 1.2rem;
     line-height: 2rem;
@@ -75,7 +75,7 @@ export const TitleShadow = styled.h1`
   line-height: 2.25rem;
   -webkit-text-stroke: 1px ${Common.colors.mainColor};
 
-  @media (width < 640px) {
+  @media (max-width: 640px) {
     /* stylelint-disable-next-line declaration-empty-line-before */
     top: 28px;
     left: 12px;
@@ -98,7 +98,7 @@ export const Intro = styled.span`
   line-height: 1.25rem;
   font-family: ${Common.fonts.subFont};
 
-  @media (width < 640px) {
+  @media (max-width: 640px) {
     /* stylelint-disable-next-line declaration-empty-line-before */
     font-size: 0.3rem;
     line-height: 1rem;
