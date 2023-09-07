@@ -8,6 +8,9 @@ export const Summary = styled.summary`
   font-size: 1rem;
   line-height: 1.5rem;
   font-family: ${Common.fonts.subFont};
+  @media (max-width: 640px) {
+    font-size: 0.75rem;
+  }
 `;
 
 export const ImgWrap = styled.div`

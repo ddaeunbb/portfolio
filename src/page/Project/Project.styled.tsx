@@ -108,6 +108,7 @@ export const Paragraph = styled.p`
   line-height: 1.75rem;
   @media (max-width: 640px) {
     font-weight: 500;
+    font-size: 1rem;
   }
 `;
 
@@ -136,6 +137,10 @@ export const List = styled.ul`
   list-style-type: disc;
   flex-direction: column;
   gap: 0.5rem;
+  @media (max-width: 640px) {
+    font-weight: 500;
+    font-size: 1rem;
+  }
 `;
 
 export const PreviewWrap = styled.div`
