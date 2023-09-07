@@ -25,4 +25,9 @@ export const IntroImg = styled.img`
   align-items: center;
   object-fit: cover;
   object-position: center;
+
+  @media not all and (width >= 640px) {
+    /* stylelint-disable-next-line declaration-empty-line-before */
+    height: 9rem;
+  }
 `;

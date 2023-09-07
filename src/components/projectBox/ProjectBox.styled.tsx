@@ -41,6 +41,11 @@ export const TextWrap = styled.article`
   flex-direction: column;
   justify-content: center;
   box-sizing: border-box;
+
+  @media not all and (width >= 640px) {
+    /* stylelint-disable-next-line declaration-empty-line-before */
+    padding-left: 0.5rem;
+  }
 `;
 
 export const Title = styled.h1`
@@ -54,7 +59,7 @@ export const Title = styled.h1`
 
   @media not all and (width >= 640px) {
     /* stylelint-disable-next-line declaration-empty-line-before */
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     line-height: 2rem;
   }
 `;
@@ -72,10 +77,10 @@ export const TitleShadow = styled.h1`
 
   @media not all and (width >= 640px) {
     /* stylelint-disable-next-line declaration-empty-line-before */
-    top: 25px;
-    left: 22px;
+    top: 28px;
+    left: 12px;
 
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     line-height: 2rem;
   }
 `;
@@ -95,7 +100,7 @@ export const Intro = styled.span`
 
   @media not all and (width >= 640px) {
     /* stylelint-disable-next-line declaration-empty-line-before */
-    font-size: 0.75rem;
+    font-size: 0.3rem;
     line-height: 1rem;
   }
 `;
