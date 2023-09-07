@@ -155,6 +155,11 @@ export const PreviewWrap = styled.div`
   display: flex;
   flex-direction: column;
   gap: 5rem;
+
+  @media not all and (width >= 640px) {
+    /* stylelint-disable-next-line declaration-empty-line-before */
+    gap: 3rem;
+  }
 `;
 
 export const Preview = styled.article`
