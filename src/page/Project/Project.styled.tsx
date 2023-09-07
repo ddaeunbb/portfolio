@@ -106,6 +106,9 @@ export const Paragraph = styled.p`
   color: ${Common.colors.zinc800};
   font-weight: 900;
   line-height: 1.75rem;
+  @media (max-width: 640px) {
+    font-weight: 500;
+  }
 `;
 
 export const Stack = styled.span`
