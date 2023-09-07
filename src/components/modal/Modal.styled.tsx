@@ -44,6 +44,11 @@ export const Title = styled.h1`
   font-family: ${Common.fonts.subFont};
   border-radius: 0.75rem;
   -webkit-text-stroke: 2px ${Common.colors.mainColor};
+  @media (max-width: 768px) {
+    width: 80%;
+    font-size: 1.25rem;
+    text-align: center;
+  }
 `;
 
 export const Thumbnail = styled.img`
@@ -55,4 +60,11 @@ export const Thumbnail = styled.img`
   background-color: ${Common.colors.subColor};
   background-size: contain;
   border-radius: 0.75rem;
+
+  @media (max-width: 768px) {
+    width: 90%;
+    height: 18rem;
+    border: 3px solid ${Common.colors.subColor};
+    background-size: cover;
+  }
 `;

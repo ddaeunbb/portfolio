@@ -108,7 +108,8 @@ export const Paragraph = styled.p`
   line-height: 1.75rem;
   @media (max-width: 640px) {
     font-weight: 500;
-    font-size: 1rem;
+    font-size: 0.75rem;
+    line-height: 1.25rem;
   }
 `;
 
@@ -139,7 +140,8 @@ export const List = styled.ul`
   gap: 0.5rem;
   @media (max-width: 640px) {
     font-weight: 500;
-    font-size: 1rem;
+    font-size: 0.75rem;
+    line-height: 1rem;
   }
 `;
 
