@@ -101,6 +101,7 @@ export function Component() {
                   playing={true}
                   controls={true}
                   width={'100%'}
+                  height={'100%'}
                 />
               </SC.VideoWrap>
             </div>

@@ -73,6 +73,12 @@ export const VideoWrap = styled.div`
   border-radius: 1rem;
   overflow: hidden;
   border: 2px solid ${Common.colors.baseBorder};
+
+  @media (max-width: 640px) {
+    /* stylelint-disable-next-line declaration-empty-line-before */
+    width: 95%;
+    margin: auto;
+  }
 `;
 
 export const IntroImg = styled.div`
@@ -86,6 +92,10 @@ export const IntroImg = styled.div`
   border: 2px solid ${Common.colors.baseBorder};
   background-size: cover;
   background-position: center;
+
+  @media (max-width: 640px) {
+    height: 18rem;
+  }
 `;
 
 export const SemiTitle = styled.h2`

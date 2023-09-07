@@ -2,6 +2,7 @@ import { motion } from 'framer-motion';
 import { useCallback, useEffect } from 'react';
 import { createPortal } from 'react-dom';
 import * as SC from './Modal.styled';
+import { ReactComponent as Close } from 'src/icon/close.svg';
 import { opacityFastVisible } from 'src/variants/variants';
 
 const portalElement = document.getElementById('modal') as HTMLElement;
@@ -34,7 +35,9 @@ export default function Modal({ title, bg, setter }: ModalProp) {
       initial="hidden"
       animate="visible">
       <SC.ModalContainer onClick={e => handleModalClose(e)}>
-        <SC.CloseBtn onClick={() => setter(false)} />
+        <SC.CloseBtn onClick={() => setter(false)}>
+          <Close css={SC.CloseSVG} />
+        </SC.CloseBtn>
         <SC.Title>{title}</SC.Title>
         <SC.Thumbnail src={bg} />
       </SC.ModalContainer>

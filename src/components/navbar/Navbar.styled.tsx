@@ -29,4 +29,9 @@ export const MotionCss = css`
   backdrop-filter: blur(8px);
   box-sizing: border-box;
   gap: 1.25rem;
+
+  @media (max-width: 640px) {
+    /* stylelint-disable-next-line declaration-empty-line-before */
+    padding: 0 1rem;
+  }
 `;

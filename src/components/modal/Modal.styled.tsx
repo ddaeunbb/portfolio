@@ -1,3 +1,4 @@
+import { css } from '@emotion/react';
 import styled from '@emotion/styled';
 import { Common } from 'src/styles/common';
 
@@ -22,8 +23,8 @@ export const CloseBtn = styled.button`
   right: 2rem;
   width: 2rem;
   height: 2rem;
-  background-size: cover;
-  background-image: url('src/icon/close.png');
+  border: none;
+  background-color: transparent;
   transition-property: all;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 100ms;
@@ -32,6 +33,11 @@ export const CloseBtn = styled.button`
     /* stylelint-disable-next-line declaration-empty-line-before */
     transform: scale(1.1);
   }
+`;
+
+export const CloseSVG = css`
+  width: 100%;
+  height: 100%;
 `;
 
 export const Title = styled.h1`
@@ -48,6 +54,7 @@ export const Title = styled.h1`
     width: 80%;
     font-size: 1.25rem;
     text-align: center;
+    line-height: 1.75rem;
   }
 `;
 
