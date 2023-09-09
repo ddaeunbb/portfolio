@@ -20,7 +20,7 @@ export const Text = styled.h1`
 
   @media (max-width: 640px) {
     /* stylelint-disable-next-line declaration-empty-line-before */
-    font-size: 4.5rem;
+    font-size: 4rem;
     line-height: 1;
   }
 `;
@@ -49,7 +49,7 @@ export const BackText = styled.h1`
 
   @media (max-width: 640px) {
     /* stylelint-disable-next-line declaration-empty-line-before */
-    font-size: 4.5rem;
+    font-size: 4rem;
     line-height: 1;
   }
 `;
