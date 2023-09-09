@@ -47,4 +47,10 @@ export const SkillWrap = styled.div`
   flex-wrap: wrap;
   column-gap: 1.25rem;
   row-gap: 0.75rem;
+  @media (max-width: 640px) {
+    width: 310px;
+    column-gap: 0.75rem;
+    row-gap: 0.5rem;
+    margin: 50px auto;
+  }
 `;

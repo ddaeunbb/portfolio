@@ -7,6 +7,9 @@ export const LeftBox = styled.div`
   left: calc(50% - 480px);
   width: 480px;
   align-items: center;
+  @media (max-width: 640px) {
+    left: 0;
+  }
 `;
 
 export const RightBox = styled.div`
@@ -15,6 +18,10 @@ export const RightBox = styled.div`
   left: 50%;
   width: 600px;
   align-items: center;
+
+  @media (max-width: 640px) {
+    left: 0;
+  }
 `;
 
 export const Container = styled.article`
@@ -31,6 +38,11 @@ export const Container = styled.article`
   box-shadow:
     0 4px 6px -1px rgb(0 0 0 / 10%),
     0 2px 4px -2px rgb(0 0 0 / 10%);
+
+  @media (max-width: 640px) {
+    width: 250px;
+    font-size: 0.75rem;
+  }
 `;
 
 export const Title = styled.h1`
@@ -40,6 +52,10 @@ export const Title = styled.h1`
   font-size: 1.25rem;
   line-height: 1.75rem;
   font-family: ${Common.fonts.subFont};
+
+  @media (max-width: 640px) {
+    font-size: 1rem;
+  }
 `;
 
 export const Line = styled.div`
@@ -48,6 +64,10 @@ export const Line = styled.div`
 
   background-color: ${Common.colors.subColor};
   border-radius: 9999px;
+
+  @media (max-width: 640px) {
+    display: none;
+  }
 `;
 
 interface DirectionProp {
@@ -65,6 +85,10 @@ export const Circle = styled.div<DirectionProp>`
 
   background-color: ${Common.colors.zinc100};
   border-radius: 9999px;
+
+  @media (max-width: 640px) {
+    display: none;
+  }
 `;
 
 export const Date = styled.span<DirectionProp>`
@@ -80,4 +104,8 @@ export const Date = styled.span<DirectionProp>`
   ${prop =>
     prop.length === 'leftlong' ? 'right: -38%;' : prop.length && 'left: -30%;'};
   -webkit-text-stroke: 1px ${Common.colors.mainColor};
+
+  @media (max-width: 640px) {
+    display: none;
+  }
 `;

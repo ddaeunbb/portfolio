@@ -11,6 +11,10 @@ export const InfoContainer = styled.section`
   justify-content: center;
   align-items: center;
   background: linear-gradient(rgb(218 216 254 / 70%), rgb(70 62 216 / 40%));
+
+  @media (max-width: 640px) {
+    padding-top: 0;
+  }
 `;
 
 export const Wrap = styled.div`
@@ -25,4 +29,7 @@ export const MotionCss = css`
   margin-top: 12rem;
   flex-direction: column;
   gap: 3.5rem;
+  @media (max-width: 640px) {
+    padding-top: 0;
+  }
 `;

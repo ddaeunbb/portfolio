@@ -29,5 +29,8 @@ export const TimeLine = styled.div`
     background-color: ${Common.colors.zinc100};
     content: '';
     border-radius: 9999px;
+    @media (max-width: 640px) {
+      display: none;
+    }
   }
 `;

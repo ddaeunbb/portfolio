@@ -58,6 +58,12 @@ export const MotionCss2 = css`
   position: absolute;
   right: 0;
   bottom: 3rem;
+
+  @media (max-width: 640px) {
+    /* stylelint-disable-next-line declaration-empty-line-before */
+    right: 0;
+    bottom: 3rem;
+  }
 `;
 
 export const MotionCss1 = css`

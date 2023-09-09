@@ -22,12 +22,20 @@ export const SqaureBox = styled.div`
   box-shadow:
     0 10px 15px -3px rgb(0 0 0 / 10%),
     0 4px 6px -4px rgb(0 0 0 / 10%);
+
+  @media (max-width: 640px) {
+    width: 90%;
+    height: 80%;
+  }
 `;
 
 export const InfoWrap = styled.div`
   display: flex;
   gap: 0.75rem;
   align-items: center;
+  @media (max-width: 640px) {
+    flex-direction: column;
+  }
 `;
 
 export const ProfileBox = styled.div`
@@ -98,6 +106,9 @@ export const Content = styled.article`
   margin-top: 1.25rem;
   flex-direction: column;
   gap: 0.25rem;
+  @media (max-width: 640px) {
+    width: 90%;
+  }
 `;
 
 export const Title = styled.h1`
@@ -106,6 +117,9 @@ export const Title = styled.h1`
   color: ${Common.colors.zinc700};
   font-size: 1.25rem;
   line-height: 1.75rem;
+  @media (max-width: 640px) {
+    font-size: 0.75rem;
+  }
 `;
 
 export const Text = styled.p`
@@ -113,6 +127,12 @@ export const Text = styled.p`
   font-weight: 900;
   font-size: 1rem;
   line-height: 2.25rem;
+  @media (max-width: 640px) {
+    font-weight: 500;
+    font-size: 0.5rem;
+    word-wrap: break-word;
+    line-height: 1.25rem;
+  }
 `;
 
 export const MotionCss = css`

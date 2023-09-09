@@ -26,4 +26,8 @@ export const LinkBox = styled.li`
 
     color: white;
   }
+  @media (max-width: 640px) {
+    width: 15rem;
+    height: 1.75rem;
+  }
 `;

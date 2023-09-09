@@ -15,6 +15,12 @@ export const Prologue = styled.article`
   box-shadow:
     0 10px 15px -3px rgb(0 0 0 / 10%),
     0 4px 6px -4px rgb(0 0 0 / 10%);
+
+  @media (max-width: 640px) {
+    width: 280px;
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+  }
 `;
 
 export const TitleShadow = styled.h1`
@@ -28,6 +34,10 @@ export const TitleShadow = styled.h1`
   line-height: 2.25rem;
   font-family: ${Common.fonts.subFont};
   -webkit-text-stroke: 1px ${Common.colors.mainColor};
+
+  @media (max-width: 640px) {
+    font-size: 1rem;
+  }
 `;
 
 export const Title = styled.h1`
@@ -39,6 +49,10 @@ export const Title = styled.h1`
   font-size: 1.875rem;
   line-height: 2.25rem;
   font-family: ${Common.fonts.subFont};
+
+  @media (max-width: 640px) {
+    font-size: 1rem;
+  }
 `;
 
 export const TextWrap = styled.div`
@@ -51,4 +65,10 @@ export const Text = styled.p`
   font-weight: 900;
   font-size: 1.125rem;
   line-height: 1.75rem;
+  @media (max-width: 640px) {
+    font-weight: 500;
+    width: 100%;
+    font-size: 0.5rem;
+    line-height: 1rem;
+  }
 `;
