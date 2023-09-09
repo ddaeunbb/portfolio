@@ -41,11 +41,17 @@ export const BottomTitleWrap = styled.div`
 export const LeftBubble = css`
   position: absolute;
   left: -200px;
+  @media (max-width: 640px) {
+    display: none;
+  }
 `;
 
 export const RightBubble = css`
   position: absolute;
   right: -200px;
+  @media (max-width: 640px) {
+    display: none;
+  }
 `;
 
 export const MotionCss2 = css`
@@ -64,7 +70,8 @@ export const MotionCss1 = css`
 
   @media (max-width: 768px) {
     /* stylelint-disable-next-line declaration-empty-line-before */
-    width: 30rem;
-    height: 30rem;
+    width: 25rem;
+    height: 25rem;
+    border-radius: 100%;
   }
 `;
