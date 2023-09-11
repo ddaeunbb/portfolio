@@ -12,6 +12,10 @@ export const SkillsContainer = styled.section`
   flex-direction: column;
   justify-content: center;
   align-items: center;
+
+  @media (max-width: 640px) {
+    padding-bottom: 100px;
+  }
 `;
 
 export const TitleWrap = styled.h1`

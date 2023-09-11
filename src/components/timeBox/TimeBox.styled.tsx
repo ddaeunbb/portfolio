@@ -54,7 +54,7 @@ export const Title = styled.h1`
   font-family: ${Common.fonts.subFont};
 
   @media (max-width: 640px) {
-    font-size: 1rem;
+    font-size: 0.75rem;
   }
 `;
 

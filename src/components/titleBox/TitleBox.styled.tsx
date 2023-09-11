@@ -18,8 +18,7 @@ export const Prologue = styled.article`
 
   @media (max-width: 640px) {
     width: 280px;
-    padding-left: 1.25rem;
-    padding-right: 1.25rem;
+    padding: 1.5rem 1.25rem 0rem 1.25rem;
   }
 `;
 
@@ -68,7 +67,7 @@ export const Text = styled.p`
   @media (max-width: 640px) {
     font-weight: 500;
     width: 100%;
-    font-size: 0.5rem;
+    font-size: 0.75rem;
     line-height: 1rem;
   }
 `;
