@@ -36,7 +36,7 @@ export const TitleShadow = styled.h1`
   -webkit-text-stroke: 1px ${Common.colors.mainColor};
 
   @media (max-width: 640px) {
-    font-size: 1rem;
+    font-size: 1.25rem;
   }
 `;
 
@@ -51,7 +51,7 @@ export const Title = styled.h1`
   font-family: ${Common.fonts.subFont};
 
   @media (max-width: 640px) {
-    font-size: 1rem;
+    font-size: 1.25rem;
   }
 `;
 
