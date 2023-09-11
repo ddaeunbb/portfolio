@@ -43,7 +43,7 @@ const Project1: ProjectType = {
     [
       '좋아요 기능, 댓글 CRUD 기능 구현',
       '',
-      '/portfolio/sharepetment/피드좋아요댓글구독.gif',
+      'https://blog.kakaocdn.net/dn/djrha8/btstMkopKkW/4KBRZy1h2nStisb5ZA6sYk/img.gif',
     ],
     [
       'React-Query를 활용한 무한스크롤 구현',
