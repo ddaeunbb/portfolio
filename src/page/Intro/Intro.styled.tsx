@@ -129,7 +129,7 @@ export const Text = styled.p`
   line-height: 2.25rem;
   @media (max-width: 640px) {
     font-weight: 500;
-    font-size: 0.5rem;
+    font-size: 1rem;
     word-wrap: break-word;
     line-height: 1.25rem;
   }

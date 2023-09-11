@@ -11,4 +11,5 @@ export const Body = styled.div<BodyProp>`
   ${props =>
     props.isproject &&
     `background-image: url('/background/grid.webp'); background-size: contain;`}
+  overflow: hidden;
 `;
