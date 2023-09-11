@@ -26,7 +26,7 @@ export const SqaureBox = styled.div`
   @media (max-width: 640px) {
     width: 90%;
     height: 80%;
-    padding: 10px;
+    padding: 30px 10px;
   }
 `;
 
@@ -129,7 +129,7 @@ export const Text = styled.p`
   font-size: 1rem;
   line-height: 2.25rem;
   @media (max-width: 640px) {
-    font-weight: 600;
+    font-weight: 500;
     font-size: 0.75rem;
     word-wrap: break-word;
     line-height: 1.25rem;
